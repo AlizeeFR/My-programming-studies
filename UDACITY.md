@@ -1,4 +1,4 @@
-- Data Analyst Nanodegree
+- **Data Analyst Nanodegree**
 
 "We built this program with expert analysts and scientists at leading technology companies to ensure you master the exact skills necessary to build a career in data science. Learn to clean up messy data, uncover patterns and insights, make predictions using machine learning, and clearly communicate critical findings."
 
@@ -14,7 +14,7 @@ J) avaScript Basics
 10) A/B Testing
 
 
-- Machine Learning Engineer Nanodegree
+- **chine Learning Engineer Nanodegree**
 
 "Machine learning represents a key evolution in the fields of computer science, data analysis, software engineering, and artificial intelligence. This program will teach you how to become a machine learning engineer, and apply predictive models to massive data sets in fields like finance, healthcare, education, and more."
 
@@ -26,7 +26,7 @@ J) avaScript Basics
 6) Artificial Intelligence for Robotics
 7) Machine Learning for Trading
 
-- Predictive Analytics for Business Nanodegree
+-**Predictive Analytics for Business Nanodegree**
 
 "As more and more companies incorporate predictive analytics into their data strategies, demand for business analysts with these skills is growing rapidly, and salaries are rising. This Nanodegree program will equip you with these very in-demand skills, and no programming experience is required to enroll! You’ll master the most important predictive techniques, work with leading tools in the space, and learn to deliver high-value solutions to important business problems."
 
@@ -39,7 +39,7 @@ J) avaScript Basics
 7) Segmentation and Clustering
 
 
-- Android Basics Nanodegree
+- **Android Basics Nanodegree**
 
 "Android apps are everywhere, and learning to build them can be a fantastic career move. No programming experience? No problem! The skills you learn in this beginning Nanodegree program will accelerate your journey to becoming a working Android Developer."
 
@@ -49,7 +49,7 @@ J) avaScript Basics
 4) Android Basics: Networking
 5) Android Basics: Data Storage
 
-- Android Developer Nanodegree
+- **Android Developer Nanodegree**
 
 "For intermediate Java developers pursuing Android specialization, this program teaches the tools, principles, and patterns that underlie all Android development. The skills you learn in this Nanodegree program will help you master the existing platform, and prepare you for the exciting opportunities in Android's future."
 
