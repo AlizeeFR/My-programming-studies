@@ -1,4 +1,4 @@
-# My-programming-studies
+# Front and back-end web-development I and II
 
 **HTML & CSS core**
   * A good place to start would be the course <a href="https://www.sitepoint.com/premium/courses/understand-html-principles-with-your-first-website-2897"> Understand HTML Principles with Your First Website</a>
