@@ -22,7 +22,10 @@ Languages and applications for such languages:
  
  
  Degrees:
-  (Equivalent) Asssociate degrees in:
-     Management
-     Marketing
-   Bachelor of Science BSc, Computer Science, from Western Governor's University
+  1) (Equivalent) Asssociate degrees in:
+     - Management
+     - Marketing
+  2) Bachelor of Science BSc, Computer Science, from Western Governor's University
+  3) Bachelor of Arts, International Management
+     - Specializations in Supply Chain & Logistics and hospitality/tourism
+  3) Master of Education in Curriculum and Instruction (M.Ed)
