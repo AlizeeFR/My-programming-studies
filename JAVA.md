@@ -35,7 +35,7 @@
  
  Projects made in Java and the original project inspiration:
  
- 1) <a href="https://learning.oreilly.com/library/view/java-deep-learning/9781788997454/> Java Deep Learning Projects involving natural language processing (NLP), image classification, GPU processing.</a>
+ 1) <a href="https://learning.oreilly.com/library/view/java-deep-learning/9781788997454/"> Java Deep Learning Projects involving natural language processing (NLP), image classification, GPU processing.</a>
       * Neural networks involving multilayer perceptrons, Deep Belief Networks, CNN, LSTM, and Factorization Machines 
       * Java Spark ML, RankSys, and Deeplearning4j
  2) <a href="https://learning.oreilly.com/library/view/machine-learning-in/9781788474399/">Java Machine Learning Projects</a>
@@ -43,7 +43,7 @@
       * Recommendation algorithms  with Apache Mahout
       * Using machine learning to detect fraud and outlier data
       * Activity recognition models for tech-Health applications
- 3) Java Android Development Projects 
+ 3) <a href="https://learning.oreilly.com/library/view/practical-android-projects/9781430232438/"> Java Android Development Projects Part 1</a> and <a href="https://learning.oreilly.com/library/view/learning-java-by/9781788839150/"> Java Android Development Projects Part 2</a>
       * Flappy bird
       * Snake
       * Pong
