@@ -1,20 +1,22 @@
-https://www.quora.com/What-algorithms-should-I-know-to-become-a-good-programmer
+<a href="https://www.quora.com/What-algorithms-should-I-know-to-become-a-good-programmer">List of algorithms you should know</a>
+  
   Current focus: Doubly Linked Lists, Merge Sort, Greedy Algorithms and Recursion/Dynamic Programming:
   
-    <a href="https://www.geeksforgeeks.org/recursion-practice-problems-solutions/"> Recursion </a>
-    <a href="https://www.geeksforgeeks.org/dynamic-programming/"> Dynamic Programming </a>
+   <a href="https://www.geeksforgeeks.org/recursion-practice-problems-solutions/"> Recursion </a>
+  
+  <a href="https://www.geeksforgeeks.org/dynamic-programming/"> Dynamic Programming </a>
     
-    Summary on the types of problems that can be solved with dynamic programming:
-      Learn the different types:
-        -Maximization
+   Summary on the types of problems that can be solved with dynamic programming:
+  Learn the different types:
+   -Maximization
 
-        -Minimization
+   -Minimization
 
-        -Number of ways. Generally has Modulus (%) some prime number, like, % (10 power 9 + 7)
+   -Number of ways. Generally has Modulus (%) some prime number, like, % (10 power 9 + 7)
+   
+   -Modify the problem, to get to one of the above.
 
-        -Modify the problem, to get to one of the above.
-
-        -It’s difficult, because a DP problem might include other things like mathematics, geometry or other implementation problems. This means you must understand the problem and then when it becomes clear what to do, you can use one of the above dynamic programming techniques to solve the problem.
+   -It’s difficult, because a DP problem might include other things like mathematics, geometry or other implementation problems. This means you must understand the problem and then when it becomes clear what to do, you can use one of the above dynamic programming techniques to solve the problem.
         - See a related video on DP on youtube for the problem you are solving. I searched on youtube, there is no single video link, but look at top 5 results. Understanding the existing solution will help make a proper solution for your existing problem. It worked for about 70+% of the time for me.
         
 <a href="https://www.quora.com/What-algorithms-should-I-know-to-become-a-good-programmer"> 6-month plan to become proficient enough to work at a FAANG company</a>
