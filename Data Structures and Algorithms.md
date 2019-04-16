@@ -80,3 +80,5 @@ Techniques
 
 
 <a href="https://medium.freecodecamp.org/software-engineering-interviews-744380f4f2af">Interview Questions by subject</a>
+
+<a href="https://www.quora.com/Is-practicing-500-programming-questions-on-LeetCode-HackerEarth-etc-enough-to-prepare-for-a-Google-interview">What to Do with LeetCode and HackerRank</a>
