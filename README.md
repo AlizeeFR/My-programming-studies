@@ -21,6 +21,8 @@ Languages and applications for such languages:
  - Python
    * Automation and scripting, data visualization and analysis
    * Data Science and Data Visualization
+   * Data extraction from Excel, SQL Databases, SAS, and the web 
+   * Machine learning and deep learning
  - JavaScript, jQuery, and node.js
  - HTML, CSS and Bootstrap
  - PHP, MongoDB, Ruby on Rails
