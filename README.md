@@ -13,7 +13,7 @@ The technical skills I can bring to the team include:
 - Database administration and SQL
 
 
-Languages and applications for such languages:
+Languages and applications for such languages (in order of proficiency)
  - Java SE
    * NLP, AI, ML
    * Android development
