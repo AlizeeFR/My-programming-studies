@@ -2,10 +2,15 @@ My study of Python outside of my degree program comes from DataCamp, PluralSight
 
 Tools:
 	TensorFlow
+	
 	NumPy
+	
 	Keras
+	
 	Kubernetes/Kubeflow
+	
 	AutoML
+	
 	SciPy/MatPlotLib
 	
 Python I
