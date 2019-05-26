@@ -1,6 +1,13 @@
 My study of Python outside of my degree program comes from DataCamp, PluralSight, Safari (O'Reilly) books and live trainings, as well as projects done on my own, through suggested book projects, DataCamp projects, and project ideas I gained from online sources.
 
-
+Tools:
+	TensorFlow
+	NumPy
+	Keras
+	Kubernetes/Kubeflow
+	AutoML
+	SciPy/MatPlotLib
+	
 Python I
 	<a href="https://www.datacamp.com/search?utf8=%E2%9C%93&q=&facets%5Btechnology%5D%5B%5D=Python&facets%5Btopic%5D%5B%5D=Programming"> Python programming for Data Science and Data Analaysis</a>
 		
