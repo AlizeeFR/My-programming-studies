@@ -47,3 +47,6 @@ Python I
    <a href="https://www.datacamp.com/search?utf8=%E2%9C%93&q=&facets%5Btechnology%5D%5B%5D=Python&facets%5Btopic%5D%5B%5D=Machine+Learning">Machine Learning</a>
 
 			- Supervised and unsupervised learning, with scikit-learn, deep learning with Keras, building chatbots, Supply Chain Optimization, neural networks, fraud detection and customer segmentation, predictive analytics, recommendation algorithms
+
+
+https://www.kaggle.com/dansbecker/learn-machine-learning
