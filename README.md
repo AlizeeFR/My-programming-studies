@@ -1,6 +1,6 @@
 # My-programming-studies
 
-
+***Disclaimer: this is just a plan of my future resumé. I am building/changing this as it goes along***
 Years studied to gain the below skills and construct proejects: 5 years, 40 to 60 hours a week of studying, implementation and exploring various tools, languages, and summer internships at local software development, marketing/web design, and management consulting agencies.
 
 The technical skills I can bring to the team include:
