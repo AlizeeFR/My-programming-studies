@@ -49,4 +49,18 @@ Python I
 			- Supervised and unsupervised learning, with scikit-learn, deep learning with Keras, building chatbots, Supply Chain Optimization, neural networks, fraud detection and customer segmentation, predictive analytics, recommendation algorithms
 
 
-https://www.kaggle.com/dansbecker/learn-machine-learning
+<a href="https://www.kaggle.com/dansbecker/learn-machine-learning"> Kaggle's Machine Learning tutorial</a>
+
+<a href="https://www.fast.ai/">Fast .AI blog</a>
+
+<a href="http://www.cs.cornell.edu/courses/cs4780/2018fa/index.html"> Cornell's graduate/senior undegrad machine learning course</a>
+
+<a href="https://www.analyticsvidhya.com/">Paid Data Science courses</a>
+
+<a href="https://fullstackdeeplearning.com/march2019">Full Stack Data Science Bootcamp lectures (appears to be free)</a>
+	   "- Formulating the problem and estimating project cost
+		- Finding, cleaning, labeling, and augmenting data 
+		- Picking the right framework and compute infrastructure
+		- Troubleshooting training and ensuring reproducibility
+		- Deploying the model at scale
+		- Students will complete a project culminating in deploying a computer vision and natural language processing system into production. There is also an opportunity to test your knowledge and prepare for interviews with an optional written exam."
