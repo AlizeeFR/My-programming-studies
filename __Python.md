@@ -64,3 +64,5 @@ Python I
 		- Troubleshooting training and ensuring reproducibility
 		- Deploying the model at scale
 		- Students will complete a project culminating in deploying a computer vision and natural language processing system into production. There is also an opportunity to test your knowledge and prepare for interviews with an optional written exam."
+		
+https://paperswithcode.com/
