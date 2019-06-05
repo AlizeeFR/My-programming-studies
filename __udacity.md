@@ -40,6 +40,7 @@
 <a href="https://www.udacity.com/course/artificial-intelligence-for-robotics--cs373">6) Artificial Intelligence for Robotics</a>
 
 <a href="https://www.udacity.com/course/machine-learning-for-trading--ud501">7) Machine Learning for Trading</a>
+<a href="https://www.udacity.com/course/intro-to-theoretical-computer-science--cs313">8) Intro into theoretical computer science</a
 
 -**Predictive Analytics for Business Nanodegree**
 
@@ -115,3 +116,8 @@
 <a href="https://www.udacity.com/course/android-wear-development--ud875A">16) Android wear</a>
 
 <a href="https://www.udacity.com/course/android-auto-development--ud875C">17) Android Auto</a>
+
+
+Data Structures and Algorithms
+<a href="https://www.udacity.com/course/intro-to-algorithms--cs215">Intro to Algorithms</>
+ 
