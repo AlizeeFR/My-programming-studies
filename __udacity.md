@@ -84,7 +84,7 @@
 "For intermediate Java developers pursuing Android specialization, this program teaches the tools, principles, and patterns that underlie all Android development. The skills you learn in this Nanodegree program will help you master the existing platform, and prepare you for the exciting opportunities in Android's future."
 
 <a href="https://www.udacity.com/course/developing-android-apps--ud853">1) Developing Android Apps</a>
-
+<a href="https://www.udacity.com/course/software-architecture-design--ud821"> Software Architecture and Design</a>
 <a href="https://www.udacity.com/course/material-design-for-android-developers--ud862">2) Material Design</a>
 
 <a href="https://www.udacity.com/course/add-google-sign-in-to-your-android-apps--ud876-5">3) Sign-in and Profiles</a>
@@ -120,4 +120,5 @@
 
 Data Structures and Algorithms
 <a href="https://www.udacity.com/course/intro-to-algorithms--cs215">Intro to Algorithms</>
+ <a href="https://www.udacity.com/course/intro-to-computer-science--cs101">
  
