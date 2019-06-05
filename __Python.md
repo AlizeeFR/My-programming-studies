@@ -65,4 +65,5 @@ Python I
 		- Deploying the model at scale
 		- Students will complete a project culminating in deploying a computer vision and natural language processing system into production. There is also an opportunity to test your knowledge and prepare for interviews with an optional written exam."
 		
-https://paperswithcode.com/
+<a href="https://paperswithcode.com/">Coding white papers and research papers</a>
+<a href="http://deeplizard.com/learn/playlist/PLZbbT5o_s2xrfNyHZsM6ufI0iZENK9xgG">Machine Learning, Deep Learning, and Data Science concepts made Simple</a>
