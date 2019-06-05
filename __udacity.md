@@ -80,6 +80,7 @@
 
 <a href="https://www.udacity.com/course/ux-design-for-mobile-developers--ud849">7) UX Design </a>
 
+
 - **Android Developer Nanodegree**
 
 "For intermediate Java developers pursuing Android specialization, this program teaches the tools, principles, and patterns that underlie all Android development. The skills you learn in this Nanodegree program will help you master the existing platform, and prepare you for the exciting opportunities in Android's future."
@@ -120,7 +121,7 @@
 
 
 Data Structures and Algorithms (4 courses total)
-<a href="https://www.udacity.com/course/intro-to-algorithms--cs215">Intro to Algorithms</>
- <a href="https://www.udacity.com/course/intro-to-computer-science--cs101">
+ <a href="https://www.udacity.com/course/intro-to-algorithms--cs215">Intro to Algorithms</>
+ <a href="https://www.udacity.com/course/intro-to-computer-science--cs101">Intro to Compuetr Science</a>
  <a href="https://classroom.udacity.com/courses/ud513"> Course 2: Data Structures</a>
  
