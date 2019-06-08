@@ -41,7 +41,7 @@
 
 <a href="https://www.udacity.com/course/machine-learning-for-trading--ud501">7) Machine Learning for Trading</a>
 
-<a href="https://www.udacity.com/course/intro-to-theoretical-computer-science--cs313">8) Intro into theoretical computer science</a
+<a href="https://www.udacity.com/course/intro-to-theoretical-computer-science--cs313">8) Intro into theoretical computer science</a>
 
 -**Predictive Analytics for Business Nanodegree**
 
@@ -121,7 +121,9 @@
 
 
 Data Structures and Algorithms (4 courses total)
- <a href="https://www.udacity.com/course/intro-to-algorithms--cs215">Intro to Algorithms</>
- <a href="https://www.udacity.com/course/intro-to-computer-science--cs101">Intro to Compuetr Science</a>
+ <a href="https://www.udacity.com/course/intro-to-algorithms--cs215">Intro to Algorithms</a>
+ 
+ <a href="https://www.udacity.com/course/intro-to-computer-science--cs101">Intro to Computer Science</a>
+ 
  <a href="https://classroom.udacity.com/courses/ud513"> Course 2: Data Structures</a>
  
