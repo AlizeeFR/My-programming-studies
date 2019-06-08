@@ -68,9 +68,9 @@
 </details>
 
 <details>
- <summary>Android Basics</summary>
+ <summary>Android Basics
 
-"Android apps are everywhere, and learning to build them can be a fantastic career move. No programming experience? No problem! The skills you learn in this beginning Nanodegree program will accelerate your journey to becoming a working Android Developer."
+"Android apps are everywhere, and learning to build them can be a fantastic career move. No programming experience? No problem! The skills you learn in this beginning Nanodegree program will accelerate your journey to becoming a working Android Developer."</summary>
 
 <a href="https://www.udacity.com/course/android-basics-user-interface--ud834"> 1) Android Basics: User Interface</a>
 
@@ -90,7 +90,7 @@
 <details>
  <summary>Advanced Android Developer</a>
 
-"For intermediate Java developers pursuing Android specialization, this program teaches the tools, principles, and patterns that underlie all Android development. The skills you learn in this Nanodegree program will help you master the existing platform, and prepare you for the exciting opportunities in Android's future."
+"For intermediate Java developers pursuing Android specialization, this program teaches the tools, principles, and patterns that underlie all Android development. The skills you learn in this Nanodegree program will help you master the existing platform, and prepare you for the exciting opportunities in Android's future."</summary>
 
 <a href="https://www.udacity.com/course/developing-android-apps--ud853">1) Developing Android Apps</a>
 <a href="https://www.udacity.com/course/software-architecture-design--ud821"> Software Architecture and Design</a>
