@@ -1,7 +1,9 @@
-- **Data Analyst Nanodegree**
+<details>
+  <summary>Data Analyst
 
-"We built this program with expert analysts and scientists at leading technology companies to ensure you master the exact skills necessary to build a career in data science. Learn to clean up messy data, uncover patterns and insights, make predictions using machine learning, and clearly communicate critical findings."
-
+"We built this program with expert analysts and scientists at leading technology companies to ensure you master the exact skills necessary to build a career in data science. Learn to clean up messy data, uncover patterns and insights, make predictions using machine learning, and clearly communicate critical findings."</summary>
+  
+  ## Heading
 <a href="https://www.udacity.com/course/intro-to-descriptive-statistics--ud827">1) Intro to Descriptive Statistics</a>
 
 <a href="https://www.udacity.com/course/intro-to-inferential-statistics--ud201">2) Intro to Inferential Statistics</a>
@@ -21,11 +23,12 @@
 <a href="https://www.udacity.com/course/intro-to-javascript--ud803">9) JavaScript Basics</a>
 
 <a href="https://www.udacity.com/course/ab-testing--ud257">10) A/B Testing</a>
+</details>
 
+<details>
+ <summary>Machine Learning Engineer Nanodegree
 
-- **Machine Learning Engineer Nanodegree**
-
-"Machine learning represents a key evolution in the fields of computer science, data analysis, software engineering, and artificial intelligence. This program will teach you how to become a machine learning engineer, and apply predictive models to massive data sets in fields like finance, healthcare, education, and more."
+"Machine learning represents a key evolution in the fields of computer science, data analysis, software engineering, and artificial intelligence. This program will teach you how to become a machine learning engineer, and apply predictive models to massive data sets in fields like finance, healthcare, education, and more." </summary>
 
 <a href="https://www.udacity.com/course/intro-to-descriptive-statistics--ud827">1) Intro to Descriptive Statistics</a>
 
@@ -42,10 +45,12 @@
 <a href="https://www.udacity.com/course/machine-learning-for-trading--ud501">7) Machine Learning for Trading</a>
 
 <a href="https://www.udacity.com/course/intro-to-theoretical-computer-science--cs313">8) Intro into theoretical computer science</a>
+</details>
 
--**Predictive Analytics for Business Nanodegree**
+<details>
+ <summary>Predictive Analytics for Business Nanodegree
 
-"As more and more companies incorporate predictive analytics into their data strategies, demand for business analysts with these skills is growing rapidly, and salaries are rising. This Nanodegree program will equip you with these very in-demand skills, and no programming experience is required to enroll! You’ll master the most important predictive techniques, work with leading tools in the space, and learn to deliver high-value solutions to important business problems."
+"As more and more companies incorporate predictive analytics into their data strategies, demand for business analysts with these skills is growing rapidly, and salaries are rising. This Nanodegree program will equip you with these very in-demand skills, and no programming experience is required to enroll! You’ll master the most important predictive techniques, work with leading tools in the space, and learn to deliver high-value solutions to important business problems."</summary>
 
 <a href="https://www.udacity.com/course/problem-solving-with-advanced-analytics--ud976">1) Problem Solving with Advanced Analytics</a>
 
@@ -60,9 +65,10 @@
 <a href="https://www.udacity.com/course/time-series-forecasting--ud980">6) Time Series Forecasting</a>
 
 <a href="https://www.udacity.com/course/segmentation-and-clustering--ud981">7) Segmentation and Clustering</a>
+</details>
 
-
-- **Android Basics Nanodegree**
+<details>
+ <summary>Android Basics</summary>
 
 "Android apps are everywhere, and learning to build them can be a fantastic career move. No programming experience? No problem! The skills you learn in this beginning Nanodegree program will accelerate your journey to becoming a working Android Developer."
 
@@ -79,9 +85,10 @@
 <a href="https://www.udacity.com/course/how-to-create-anything-in-android--ud802">6) UI Components</a>
 
 <a href="https://www.udacity.com/course/ux-design-for-mobile-developers--ud849">7) UX Design </a>
+</details>
 
-
-- **Android Developer Nanodegree**
+<details>
+ <summary>Advanced Android Developer</a>
 
 "For intermediate Java developers pursuing Android specialization, this program teaches the tools, principles, and patterns that underlie all Android development. The skills you learn in this Nanodegree program will help you master the existing platform, and prepare you for the exciting opportunities in Android's future."
 
@@ -118,12 +125,15 @@
 <a href="https://www.udacity.com/course/android-wear-development--ud875A">16) Android wear</a>
 
 <a href="https://www.udacity.com/course/android-auto-development--ud875C">17) Android Auto</a>
+</details>
 
-
-Data Structures and Algorithms (4 courses total)
+<details>
+ <summary> TODO </summary>
+ Data Structures and Algorithms (4 courses total)
  <a href="https://www.udacity.com/course/intro-to-algorithms--cs215">Intro to Algorithms</a>
  
  <a href="https://www.udacity.com/course/intro-to-computer-science--cs101">Intro to Computer Science</a>
  
  <a href="https://classroom.udacity.com/courses/ud513"> Course 2: Data Structures</a>
+ </details>
  
