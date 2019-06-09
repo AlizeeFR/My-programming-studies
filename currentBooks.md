@@ -25,6 +25,8 @@ Desktop GUI Development and Android
 3. <a href="https://www.datacamp.com/home">Data Camp</a>
 4. <a href="https://classroom.udacity.com/nanodegrees/nd185/syllabus/core-curriculum">Deep Learning Nanodegree</a>
 </details>
+5. <a href="https://classroom.udacity.com/courses/cs271">Intro to AI and Machine Learning</a>
+6. <a href="https://classroom.udacity.com/courses/ud188">Intro to PyTorch</a>
 
 ***
 
@@ -34,3 +36,4 @@ Desktop GUI Development and Android
   
 1. <a href="https://learning.oreilly.com/library/view/build-your-own/9780987090850/">HTML & CSS the right way</a>
 </details>
+2. Udacity Full Stack Web Dev 
