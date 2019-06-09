@@ -2,8 +2,8 @@
 Desktop GUI Development and Android
 <details>
   <summary>Swing</summary>
-    1. <a href="https://app.pluralsight.com/library/courses/mastering-java-swing-part1/table-of-contents"> Java Swing: CaveOfProgramming</a>
-    2. <a href="https://learning.oreilly.com/library/view/beginning-java-8/9781430266624/"> Swing and JDBC </a>
+  1. <a href="https://app.pluralsight.com/library/courses/mastering-java-swing-part1/table-of-contents"> Java Swing: CaveOfProgramming</a>
+  2. <a href="https://learning.oreilly.com/library/view/beginning-java-8/9781430266624/"> Swing and JDBC </a>
 </details>
 
 <details>
