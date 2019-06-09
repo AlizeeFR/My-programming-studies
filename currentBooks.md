@@ -24,9 +24,9 @@ Desktop GUI Development and Android
 2. <a href="https://learning.oreilly.com/library/view/automate-the-boring/9781457189906/">Automate The Boring Stuff</a>
 3. <a href="https://www.datacamp.com/home">Data Camp</a>
 4. <a href="https://classroom.udacity.com/nanodegrees/nd185/syllabus/core-curriculum">Deep Learning Nanodegree</a>
-</details>
 5. <a href="https://classroom.udacity.com/courses/cs271">Intro to AI and Machine Learning</a>
 6. <a href="https://classroom.udacity.com/courses/ud188">Intro to PyTorch</a>
+</details>
 
 ***
 
