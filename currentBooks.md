@@ -5,11 +5,12 @@ Desktop GUI Development and Android
     1. <a href="https://app.pluralsight.com/library/courses/mastering-java-swing-part1/table-of-contents"> Java Swing: CaveOfProgramming</a>
     2. <a href="https://learning.oreilly.com/library/view/beginning-java-8/9781430266624/"> Swing and JDBC </a>
 </details>
+
 <details>
   <summary>Android</summary>
   
-    1. <a href="https://wares.commonsware.com/app/internal/catalog">CommonsWare</a>
-    2. <a href="https://learning.oreilly.com/library/view/learning-java-by/9781788839150/">Building Android Games</a>
+   1. <a href="https://wares.commonsware.com/app/internal/catalog">CommonsWare</a>
+   2. <a href="https://learning.oreilly.com/library/view/learning-java-by/9781788839150/">Building Android Games</a>
 </details>
 
 ***
