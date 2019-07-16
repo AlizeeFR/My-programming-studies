@@ -29,13 +29,13 @@ Languages and applications for such languages (in order of proficiency)
  - PHP, MongoDB, Ruby on Rails
  
  
- Degrees:
+ Planed Degrees over the next 8 years:
   1) (Accredited) Asssociate degrees in:
      - Management
      - Marketing
-  2) Bachelor of Science BSc, Computer Science
-  3) Bachelor of Arts, International Management ??? electrical engineering? biomed????
-     - Accredited Specializations in Supply Chain & Logistics and hospitality/tourism
+  2) Bachelor of Science BSc, Computer Science  -- 1/2 done
+  3) Bachelor of Science, International Management ??? electrical engineering? biomed????
+     - Accredited Specializations/Certificates in Supply Chain & Logistics and hospitality/tourism
   3) Master of Education in Curriculum and Instruction (M.Ed) 
   4) replace the above with med school & master's in biomed ???????
   
@@ -44,7 +44,7 @@ Languages and applications for such languages (in order of proficiency)
    2) Non-profit management consulting group 
    3) Web-development firm (Fall & Spring year 2)
    4) Software development and IT solutions firms (B2C and B2B) 
-   5) Out-reach event coordinator, fundraiser, and advocate for Big Cat rescue shelters (summers 2 and 3)
+   5) Out-reach event coordinator, fundraiser, and advocate for rescue shelters (summers 2 and 3)
    
    
    6) Disney w/ a focus on machine learning (summer)? or bio-engineering firm using NLP & AI or data science for political internship (summer)?
