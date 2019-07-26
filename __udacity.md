@@ -11,6 +11,7 @@
 1. [Intro to HTML and CSS](https://www.udacity.com/course/intro-to-html-and-css--ud304)
 1. [JavaScript Basics](https://www.udacity.com/course/intro-to-javascript--ud803)
 1. [A/B Testing](https://www.udacity.com/course/ab-testing--ud257)
+1. [Data Analysis and Visualization](https://www.udacity.com/course/data-analysis-and-visualization--ud404)
 </details>
 
 <details>
@@ -25,6 +26,7 @@
 1. [Intro into theoretical computer science](https://www.udacity.com/course/intro-to-theoretical-computer-science--cs313)
 1. [Secure and Private AI](https://www.udacity.com/course/secure-and-private-ai--ud185)
 1. [Intro to PyTorch](https://www.udacity.com/course/deep-learning-pytorch--ud188)
+1. [Introduction to Computer Vision](https://www.udacity.com/course/introduction-to-computer-vision--ud810)
 </details>
 
 <details>
