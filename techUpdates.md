@@ -3,6 +3,7 @@ General:
   
 Android:
   <a href="https://androidweekly.net/">Android Weekly Magazine</a>
+  1. [Android Tutorials](https://www.vogella.com/tutorials/)
   
 Design labs, tools, and resources for app/website designers and developers:
   <a href="https://www.uplabs.com/android">Up Labs</a>
