@@ -3,15 +3,22 @@
   
 1. [Intro to Descriptive Statistics](https://www.udacity.com/course/intro-to-descriptive-statistics--ud827)
 1. [Intro to Inferential Statistics](https://www.udacity.com/course/intro-to-inferential-statistics--ud201)
+1. [Secure and Private AI](https://www.udacity.com/course/secure-and-private-ai--ud185)
 1. [Intro to Data Analysis](https://www.udacity.com/course/intro-to-data-analysis--ud170)
 1. [Data Wrangling with MongoDB](https://www.udacity.com/course/data-wrangling-with-mongodb--ud032)
 1. [Data Analysis with R](https://www.udacity.com/course/data-analysis-with-r--ud651)
 1. [Intro to Machine Learning](https://www.udacity.com/course/intro-to-machine-learning--ud120)
 1. [Data Visualization and D3.js](https://www.udacity.com/course/data-visualization-and-d3js--ud507)
+1. [Model Building & Validation](https://www.udacity.com/course/model-building-and-validation--ud919)
 1. [Intro to HTML and CSS](https://www.udacity.com/course/intro-to-html-and-css--ud304)
 1. [JavaScript Basics](https://www.udacity.com/course/intro-to-javascript--ud803)
 1. [A/B Testing](https://www.udacity.com/course/ab-testing--ud257)
 1. [Data Analysis and Visualization](https://www.udacity.com/course/data-analysis-and-visualization--ud404)
+1. [Graduate-level artificial intelligence course](https://www.udacity.com/course/artificial-intelligence--ud954)
+1. [Reinforcement Learning](https://www.udacity.com/course/reinforcement-learning--ud600)
+1. [Big Data Analytics in Healthcare](https://www.udacity.com/course/big-data-analytics-in-healthcare--ud758)
+1. [Artificial Intellignece for Robots](https://www.udacity.com/course/artificial-intelligence-for-robotics--cs373)
+
 </details>
 
 <details>
