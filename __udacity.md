@@ -110,6 +110,7 @@
 
 <details>
   <summary>FullStack Web Developer</summary>
+  
 1. [Shell WorkShop](https://www.udacity.com/course/shell-workshop--ud206)
 1. Git & Github - [Part 1](https://www.udacity.com/course/how-to-use-git-and-github--ud775), [Part 2](https://www.udacity.com/course/github-collaboration--ud456)
 1. [HTTP & Webservers](https://www.udacity.com/course/http-web-servers--ud303)
