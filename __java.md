@@ -69,5 +69,5 @@
       * NLP models, tokens,  tokenizer APIs in various NLP tools
       * Normalization, stemming, lemmatization
       *  Name recognition, topic modeling, parsing trees, pipelines, and chatbots
-   7) <a href="https://learning.oreilly.com/library/view/java-data-science/9781788475655/"> Data Science with Java</a>
+   7) [ ] <a href="https://learning.oreilly.com/library/view/java-data-science/9781788475655/"> Data Science with Java</a>
    
