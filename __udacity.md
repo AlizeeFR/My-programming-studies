@@ -24,6 +24,8 @@
 <details>
   <summary>Machine Learning, Artificial Intelligence, and Deep Learning</summary>
   
+1. [x] [Secure and Private AI](https://www.udacity.com/course/secure-and-private-ai--ud185)
+1. [x] [Intro to PyTorch](https://www.udacity.com/course/deep-learning-pytorch--ud188)
 1. [Intro to Data Science](https://www.udacity.com/course/intro-to-data-science--ud359)
 1. [Intro to Artificial Intelligence](https://www.udacity.com/course/intro-to-artificial-intelligence--cs271)
 1. [Reinforcement Learning](https://www.udacity.com/course/reinforcement-learning--ud600)
@@ -31,8 +33,6 @@
 1. [Artificial Intelligence for Robotics](https://www.udacity.com/course/artificial-intelligence-for-robotics--cs373)
 1. [Machine Learning for Trading](https://www.udacity.com/course/machine-learning-for-trading--ud501)
 1. [Intro into theoretical computer science](https://www.udacity.com/course/intro-to-theoretical-computer-science--cs313)
-1. [Secure and Private AI](https://www.udacity.com/course/secure-and-private-ai--ud185)
-1. [Intro to PyTorch](https://www.udacity.com/course/deep-learning-pytorch--ud188)
 1. [Introduction to Computer Vision](https://www.udacity.com/course/introduction-to-computer-vision--ud810)
 </details>
 
@@ -51,10 +51,10 @@
 <details>
  <summary>Android Basics</summary>
   
-1. [Android Basics: User Interface](https://www.udacity.com/course/android-basics-user-interface--ud834)
-1. [Android Basics: User Input](https://www.udacity.com/course/android-basics-user-input--ud836)
-1. [Android Basics: Multi-screen Apps](https://www.udacity.com/course/android-basics-multi-screen-apps--ud839)
-1. [Android Basics: Networking](https://www.udacity.com/course/android-basics-networking--ud843)
+1. [x] [Android Basics: User Interface](https://www.udacity.com/course/android-basics-user-interface--ud834)
+1. [x] [Android Basics: User Input](https://www.udacity.com/course/android-basics-user-input--ud836)
+1. [x] [Android Basics: Multi-screen Apps](https://www.udacity.com/course/android-basics-multi-screen-apps--ud839)
+1. [ ] [Android Basics: Networking](https://www.udacity.com/course/android-basics-networking--ud843)
 1. [Android Basics: Data Storage](https://www.udacity.com/course/android-basics-data-storage--ud845)
 1. [UI Components](https://www.udacity.com/course/how-to-create-anything-in-android--ud802)
 1. [UX Design ](https://www.udacity.com/course/ux-design-for-mobile-developers--ud849)
@@ -110,11 +110,11 @@
 
 <details>
   <summary>FullStack Web Developer</summary>
-  
+
+1. [x] [HTTP & Webservers](https://www.udacity.com/course/http-web-servers--ud303)
+1. [ ] [Networking For Developers](https://www.udacity.com/course/networking-for-web-developers--ud256)
 1. [Shell WorkShop](https://www.udacity.com/course/shell-workshop--ud206)
 1. Git & Github - [Part 1](https://www.udacity.com/course/how-to-use-git-and-github--ud775), [Part 2](https://www.udacity.com/course/github-collaboration--ud456)
-1. [HTTP & Webservers](https://www.udacity.com/course/http-web-servers--ud303)
-1. [Networking For Developers](https://www.udacity.com/course/networking-for-web-developers--ud256)
 1. [Intro to Relational Databases](https://www.udacity.com/course/intro-to-relational-databases--ud197)
 1. [Backend Web Development](https://www.udacity.com/course/intro-to-backend--ud171)
 1. [Responsive Web Design](https://www.udacity.com/course/responsive-web-design-fundamentals--ud893)
