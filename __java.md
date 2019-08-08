@@ -8,24 +8,24 @@
  
  4) Oracle Java SE 8 Programmer I and II Certification trainings
  5) YouTube, StackOverflow, and MOOCs.
-    * JDK vs JRE, heap versus local memory, frames, and variable scope
-    * Java SE vs EE vs Android environment
-    * Java Language features
+    * [x] JDK vs JRE, heap versus local memory, frames, and variable scope
+    * [x] Java SE vs EE vs Android environment
+    * [x] Java Language features
         * Parameters, variables, fields, methods, data types and operators
         * Packages, error handling, interfaces and factory classes
         * abstract, final, static, this keywords
-    * Specific features of Java
+    * [x] Specific features of Java
         * Regex (Regular expressions)
         * Input and output using Java IO  and Java NIO
         * Serialization, reflection, and data persistence
         * Logging
         * Type metadata, annotations
-    * Java Collections framework
+    * [x] Java Collections framework
         * LinkedList, ArrayList
         * Sets, maps, hashing and overriding 
         * equals() methods, String pool, reference equality versus equality of data within referenced objects
         * Iterator, Comparator, and Comparable
-    * Java Generics
+    * [x] Java Generics
         * Implementing generic classes and interfaces
         * Generic type bounds
         * Generic methods
@@ -43,7 +43,7 @@
       * Recommendation algorithms  with Apache Mahout
       * Using machine learning to detect fraud and outlier data
       * Activity recognition models for tech-Health applications
- 3) <a href="https://learning.oreilly.com/library/view/practical-android-projects/9781430232438/"> Java Android Development Projects Part 1</a> and <a href="https://learning.oreilly.com/library/view/learning-java-by/9781788839150/"> Java Android Development Projects Part 2</a>
+ 3) [x] <a href="https://learning.oreilly.com/library/view/practical-android-projects/9781430232438/"> Java Android Development Projects Part 1</a> and <a href="https://learning.oreilly.com/library/view/learning-java-by/9781788839150/"> Java Android Development Projects Part 2</a>
       * Flappy bird
       * Snake
       * Pong
