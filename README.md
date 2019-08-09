@@ -2,9 +2,9 @@
 
 ***Disclaimer: this is just a plan of my future resumé. I am building/changing this as it goes along and am only at year 1. I'm beginning college soon. This repository is being used to practice merges, commitments, command-line connections and so on while organizing my academic studies.***
 
-Years studied to gain the below skills and construct projects: 5 to 8 years, 40 to 60 hours a week of studying, implementation and exploring various tools, languages, and summer internships at local software development, marketing/web design, and management consulting agencies.
+Years studied to gain the below skills and construct projects: 5 to 8 years, 40 to 60 hours a week of studying
 
-The technical skills I can bring to the team include:
+Technical skills to study:
 
 - Familiarity with natural language processing, artificial intelligence, and machine learning
 - Familiarity with data visualization, analysis, and business training in project management, marketing, and business administration
