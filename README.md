@@ -28,3 +28,6 @@ Languages and applications for such languages (in order of proficiency)
  - HTML, CSS and Bootstrap
  - PHP, MongoDB, Ruby on Rails
  
+ **For Current Studies (non-data structure/algorithm oriented), see __java.md and __udacity.md**
+ 
+ 
