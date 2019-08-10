@@ -1,6 +1,6 @@
 # My-programming-studies
 
-***Disclaimer: this is just a plan of my future resumé. I am building/changing this as it goes along and am only at year 1. I'm beginning college soon. This repository is being used to practice merges, commitments, command-line connections and so on while organizing my academic studies.***
+***Disclaimer: this is just a plan of my future resumé. I am building/changing this as it goes along and am only at year 1. I'm beginning college soon. This repository is being used to practice merges, commits, command-line connections and so on while organizing my academic studies.***
 
 Years studied to gain the below skills and construct projects: 5 to 8 years, 40 to 60 hours a week of studying
 
@@ -9,7 +9,7 @@ Technical skills to study:
 - Familiarity with natural language processing, artificial intelligence, and machine learning
 - Familiarity with data visualization, analysis, and business training in project management, marketing, and business administration
 - Familiarity with software design paradigms (Agile, Scrum framework, Project+ and preparing for PMP)
-- Familiarity with comamnd-line interfaces and vesrion control with Git
+- Familiarity with command-line interfaces and vesrion control with Git
 - DevOps background in networking and cloud computing and AWS (CompTIA A+, Network+ Cloud Essentials, Security+, Project+, IT Operations Specialist, ITIL Foundations, LPI Linux Essentials, CIW Site development associate, CCNA, CCNA Security, CCDA and CCENT)
 - Database administration and SQL
 
