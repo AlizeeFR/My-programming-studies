@@ -1,3 +1,6 @@
+Udacity has either removed or is having internal errors because most of the below courses are now resulting in 404 errors. Contacted Udacity & Udacity Reddit section on 08/015/2019, waiting to hear back.
+
+
 <details>
   <summary>Data Analyst</summary>
   
