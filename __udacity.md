@@ -166,4 +166,170 @@ Udacity has either removed or is having internal errors because most of the belo
 
 
 
+<details>
+  <summary> possible fix for Udacity bug/removal 08/15/2019, 5:40 a.m. Replaced udacity.com with classroom.udacity.com</summary>
+
+
+<details>
+  <summary>Data Analyst</summary>
+  
+1. [Intro to Descriptive Statistics](https://classroom.udacity.com/courses/ud827)
+1. [Intro to Inferential Statistics](https://classroom.udacity.com/courses/ud201)
+1. [Secure and Private AI](https://classroom.udacity.com/courses/ud185)
+1. [Intro to Data Analysis](https://classroom.udacity.com/courses/ud170)
+1. [Data Wrangling with MongoDB](https://classroom.udacity.com/courses/ud032)
+1. [Data Analysis with R](https://classroom.udacity.com/courses/ud651)
+1. [Intro to Machine Learning](https://classroom.udacity.com/courses/ud120)
+1. [Data Visualization and D3.js](https://classroom.udacity.com/courses/ud507)
+1. [Model Building & Validation](https://classroom.udacity.com/courses/ud919)
+1. [Intro to HTML and CSS](https://classroom.udacity.com/courses/ud304)
+1. [JavaScript Basics](https://classroom.udacity.com/courses/ud803)
+1. [A/B Testing](https://classroom.udacity.com/courses/ud257)
+1. [Data Analysis and Visualization](https://classroom.udacity.com/courses/ud404)
+1. [Graduate-level artificial intelligence course](https://classroom.udacity.com/courses/ud954)
+1. [Reinforcement Learning](https://classroom.udacity.com/courses/ud600)
+1. [Big Data Analytics in Healthcare](https://classroom.udacity.com/courses/ud758)
+1. [Artificial Intellignece for Robots](https://classroom.udacity.com/courses/cs373)
+
+</details>
+
+<details>
+  <summary>Machine Learning, Artificial Intelligence, and Deep Learning</summary>
+  
+1. [x] [Secure and Private AI](https://classroom.udacity.com/courses/ud185)
+1. [x] [Intro to PyTorch](https://classroom.udacity.com/courses/ud188)
+1. [Intro to Data Science](https://classroom.udacity.com/courses/ud359)
+1. [Intro to Artificial Intelligence](https://classroom.udacity.com/courses/cs271)
+1. [Reinforcement Learning](https://classroom.udacity.com/courses/ud600)
+1. [Deep Learning](https://classroom.udacity.com/courses/ud730)
+1. [Artificial Intelligence for Robotics](https://classroom.udacity.com/courses/cs373)
+1. [Machine Learning for Trading](https://classroom.udacity.com/courses/ud501)
+1. [Intro into theoretical computer science](https://classroom.udacity.com/courses/cs313)
+1. [Introduction to Computer Vision](https://classroom.udacity.com/courses/ud810)
+</details>
+
+<details>
+  <summary>Predictive Analytics for Business Nanodegree</summary>
+  
+1. [Problem Solving with Advanced Analytics](https://classroom.udacity.com/courses/ud976)
+1. [Creating an Analytical Dataset](https://classroom.udacity.com/courses/ud977)
+1. [Classification Models](https://classroom.udacity.com/courses/ud978)
+1. [Data Visualization in Tableau](https://classroom.udacity.com/courses/ud1006)
+1. [A/B Testing for Business Analysts](https://classroom.udacity.com/courses/ud979)
+1. [Time Series Forecasting](https://classroom.udacity.com/courses/ud980)
+1. [Segmentation and Clustering](https://classroom.udacity.com/courses/ud981)
+</details>
+
+<details>
+ <summary>Android Basics</summary>
+  
+1. [x] [Android Basics: User Interface](https://classroom.udacity.com/courses/ud834)
+1. [x] [Android Basics: User Input](https://classroom.udacity.com/courses/ud836)
+1. [x] [Android Basics: Multi-screen Apps](https://classroom.udacity.com/courses/ud839)
+1. [ ] [Android Basics: Networking](https://classroom.udacity.com/courses/ud843)
+1. [Android Basics: Data Storage](https://classroom.udacity.com/courses/ud845)
+1. [UI Components](https://classroom.udacity.com/courses/ud802)
+1. [UX Design ](https://classroom.udacity.com/courses/ud849)
+1. [Localization Essentials](https://classroom.udacity.com/courses/ud610)
+</details>
+
+<details>
+ <summary>Advanced Android Developer</summary>
+
+1. [Developing Android Apps](https://classroom.udacity.com/courses/ud853)
+1. [Software Architecture and Design](https://classroom.udacity.com/courses/ud821) 
+1. [Material Design](https://classroom.udacity.com/courses/ud862)
+1. [Sign-in and Profiles](https://classroom.udacity.com/courses/ud876-5)
+1. [Google maps](https://classroom.udacity.com/courses/ud876-4)
+1. [Location and Context](https://classroom.udacity.com/courses/ud876-1)
+1. [Google analytics](https://classroom.udacity.com/courses/ud876-2)
+1. [Google ads](https://classroom.udacity.com/courses/ud876-3)
+1. [Game Design I](https://classroom.udacity.com/courses/ud405)
+1. [Game Design II](https://classroom.udacity.com/courses/ud406)
+1. [App Development II](https://classroom.udacity.com/courses/ud855)
+1. [Optimizing app performance](https://classroom.udacity.com/courses/ud825)
+1. [Firebase for Android](https://classroom.udacity.com/courses/ud009)
+1. [Gradle for Android](https://classroom.udacity.com/courses/ud867)
+1. [Developing Scalable Apps](https://classroom.udacity.com/courses/ud859)
+1. [Android TV and Google Cast](https://classroom.udacity.com/courses/ud875B)
+1. [Android Wear](https://classroom.udacity.com/courses/ud875A)
+1. [Android Auto](https://classroom.udacity.com/courses/ud875C)
+1. [Mobile Design and Usability](https://classroom.udacity.com/courses/ud358)
+1. [Passwordless login](https://classroom.udacity.com/courses/ud357)
+</details>
+
+<details>
+  <summary> iOS Developer </summary>
+  
+1. [Swift for Beginners](https://classroom.udacity.com/courses/ud1022)
+1. [Swift Programming Syntax](https://classroom.udacity.com/courses/ud902)
+1. [Intro to iOS App Development with Swift](https://classroom.udacity.com/courses/ud585)
+1. [Data Structures and Algorithms in Swift](https://classroom.udacity.com/courses/ud1011)
+1. [UIKit Fundamentals](https://classroom.udacity.com/courses/ud788)
+1. [iOS Networking with Swift](https://classroom.udacity.com/courses/ud421)
+1. [iOS Persistence and Core Data](https://classroom.udacity.com/courses/ud325)
+1. [How to Make an iOS App](https://classroom.udacity.com/courses/ud607)
+1. [Objective-C for Swift Developers](https://classroom.udacity.com/courses/ud1009)
+1. [ARKit in Swift](https://classroom.udacity.com/courses/ud116)
+1. [Passwordless logins in iOS](https://classroom.udacity.com/courses/ud1028)
+1. [Firebase analytics](https://classroom.udacity.com/courses/ud353)
+1. [Firebase chat-apps](https://classroom.udacity.com/courses/ud0351)
+1. [Machine Learning in iOS](https://classroom.udacity.com/courses/ud1038)
+1. [Asynchronous operations in iOS](https://classroom.udacity.com/courses/ud576)
+1. [Server-Side Swift](https://classroom.udacity.com/courses/ud1031)
+1. [XCode Debugging](https://classroom.udacity.com/courses/ud774)
+</details>
+
+<details>
+  <summary>FullStack Web Developer</summary>
+
+1. [x] [HTTP & Webservers](https://classroom.udacity.com/courses/ud303)
+1. [ ] [Networking For Developers](https://classroom.udacity.com/courses/ud256)
+1. [Shell WorkShop](https://classroom.udacity.com/courses/ud206)
+1. Git & Github - [Part 1](https://classroom.udacity.com/courses/ud456)
+1. [Intro to Relational Databases](https://classroom.udacity.com/courses/ud197)
+1. [Backend Web Development](https://classroom.udacity.com/courses/ud171)
+1. [Responsive Web Design](https://classroom.udacity.com/courses/ud893)
+1. [Introduction to JavaScript](https://classroom.udacity.com/courses/ud549)
+1. [Object Oriented JavaScript](https://classroom.udacity.com/courses/ud711)
+1. [ES6 JavaScript](https://classroom.udacity.com/courses/ud356)
+1. [Introduction to jQuery](https://classroom.udacity.com/courses/ud245)
+1. [Introduction to AJAX using jQuery](https://classroom.udacity.com/courses/ud110)
+1. [JavaScript and the DOM](https://classroom.udacity.com/courses/ud117)
+1. [Full Stack Foundations](https://classroom.udacity.com/courses/ud088)
+1. [Authentication & Authorization](https://classroom.udacity.com/courses/ud330)
+1. [RESTful APIs](https://classroom.udacity.com/courses/ud388)
+1. [Configuring Linux Web Servers](https://classroom.udacity.com/courses/ud299)
+1. [Web Accessibility](https://classroom.udacity.com/courses/ud891)
+1. [Website performance and optimization](https://classroom.udacity.com/courses/ud884)
+1. [Browser Rendering optimization](https://classroom.udacity.com/courses/ud860)
+1. [Javascript Design Patterns](https://classroom.udacity.com/courses/ud989)
+1. [Intro to AJAX](https://classroom.udacity.com/courses/ud110)
+1. [Building High Conversion Web Forms](https://classroom.udacity.com/courses/ud890)
+1. [Web Tooling & Automation](https://classroom.udacity.com/courses/ud892)
+1. [JavaScript Promises](https://classroom.udacity.com/courses/ud898)
+1. [Asynchronous JavaScript](https://classroom.udacity.com/courses/ud109)
+1. [Offline Web Applications](https://classroom.udacity.com/courses/ud899)
+1. [Front-End Frameworks](https://classroom.udacity.com/courses/ud894)
+1. [Client-Server Communications](https://classroom.udacity.com/courses/ud897)
+1. [HTML5 Canvas](https://classroom.udacity.com/courses/ud292)
+1. [Progressive Web Apps](https://classroom.udacity.com/courses/ud811)
+
+</details>
+
+<details>
+ <summary>  Data Structures and Algorithms and Interview Prep</summary>
+
+ 1. [Introduction to Algorithms](https://classroom.udacity.com/courses/cs215)
+ 1. [Intro to Computer Science](https://classroom.udacity.com/courses/cs101)
+ 1. [Data Structures and Algorithms in Python](https://classroom.udacity.com/courses/ud513)
+ 1. [Data Science Interview Prep](https://classroom.udacity.com/courses/ud944)
+ 1. [FullStack Interview Prep](https://classroom.udacity.com/courses/ud252)
+ 1. [Front-end Interview Prep](https://classroom.udacity.com/courses/ud250)
+ 1. [Android Interview Prep](https://classroom.udacity.com/courses/ud241)
+ 1. [iOS Interview Prep](https://classroom.udacity.com/courses/ud240)
+ 1. [Machine Learning Interview Prep](https://classroom.udacity.com/courses/ud1001)
+ 
+ </details>
+</details
 
