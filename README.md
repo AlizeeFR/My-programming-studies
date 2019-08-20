@@ -6,11 +6,11 @@ Years studied to gain the below skills and construct projects: 5 to 8 years, 40 
 
 Technical skills to study:
 
-- Familiarity with natural language processing, artificial intelligence, and machine learning
-- Familiarity with data visualization, analysis, and business training in project management, marketing, and business administration
-- Familiarity with software design paradigms (Agile, Scrum framework, Project+ and preparing for PMP)
+- Familiarity with natural language processing, artificial intelligence, and machine learning (udacity nanodegrees & __java books)
+- Familiarity with data visualization, analysis, and business training in project management, marketing, and business administration (udacity nanodegrees, study.com while in college, work with venture capitalist & the funders for the startup to develop business plan & marketing plan & use Tableau from business analaytics etc nanodegree for data-based marketing)
+- Familiarity with software design paradigms (Agile, Scrum framework, Project+ and preparing for PMP) - PluralSight
 - Familiarity with command-line interfaces and vesrion control with Git
-- DevOps background in networking and cloud computing and AWS (CompTIA A+, Network+ Cloud Essentials, Security+, Project+, IT Operations Specialist, ITIL Foundations, LPI Linux Essentials, CIW Site development associate, CCNA, CCNA Security, CCDA and CCENT)
+- DevOps background in networking and cloud computing and AWS (**CompTIA A+**, Network+ (next), Cloud Essentials, Security+, Project+, IT Operations Specialist, ITIL Foundations, LPI Linux Essentials, CCNA, CCNA Security, CCDA and CCENT) - PluralSight & Udacity Nanodegreee w/ focus on CI/CD pipline, Kubernetes, Docker, & AWS through Pluralsight & udacity nanodegree training
 - Database administration and SQL
 
 
@@ -29,5 +29,6 @@ Languages and applications for such languages (in order of proficiency)
  - PHP, MongoDB, Ruby on Rails
  
  **For Current Studies (non-data structure/algorithm oriented), see __java.md and __udacity.md**
+ 
  
  
