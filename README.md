@@ -2,7 +2,7 @@
 
 ***Disclaimer: this is just a plan of my future resumé. I am building/changing this as it goes along and am only at year 1. I'm beginning college soon. This repository is being used to practice merges, commits, command-line connections and so on while organizing my academic studies.***
 
-Years studied to gain the below skills and construct projects: 5 to 8 years (bachelors + 7-year medical school + 1 year for any accelerated degrees (4+1), 40 to 60 hours a week of studying
+Years studied to gain the below skills and construct projects: 5 to 8 years (bachelors + 7-year medical school + 1 year for any accelerated degrees (4+1), 40 to 60 hours a week of studying official college courses + the ones here. Use Focuster.com, SquareUp, and Gantt Project Management plans for students like Asana to track progess & collaboration)
 
 Technical skills to study:
 
