@@ -115,7 +115,7 @@ Udacity has either removed or is having internal errors because most of the belo
   <summary>FullStack Web Developer</summary>
 
 1. [x] [HTTP & Webservers](https://www.udacity.com/course/http-web-servers--ud303)
-1. [ ] [Networking For Developers](https://www.udacity.com/course/networking-for-web-developers--ud256)
+1. [x] [Networking For Developers](https://www.udacity.com/course/networking-for-web-developers--ud256)
 1. [Shell WorkShop](https://www.udacity.com/course/shell-workshop--ud206)
 1. Git & Github - [Part 1](https://www.udacity.com/course/how-to-use-git-and-github--ud775), [Part 2](https://www.udacity.com/course/github-collaboration--ud456)
 1. [Intro to Relational Databases](https://www.udacity.com/course/intro-to-relational-databases--ud197)
