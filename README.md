@@ -31,4 +31,13 @@ Languages and applications for such languages (in order of proficiency)
  **For Current Studies (non-data structure/algorithm oriented), see __java.md and __udacity.md**
  
  
- 
+ Eventual graduation:
+  Bachelor of Science
+     majors: computer science, biomedical sciences, (possibly music/operatic studies)
+  
+  
+  Graduate degrees:
+    MD Medical Degree (guaranteed BS-MD program)
+    MSc Computer Science (accelerated BS-MsC)
+    MSc in Pharmaceutical nanoengineering (co-admit to the MD program)
+    MSc Biomedical engineering (cross credits between biomedical sciences, electives, and transfering MD credits)
