@@ -39,7 +39,6 @@ Languages and applications for such languages (in order of proficiency)
   
   
   Graduate degrees:
-    MD Medical Degree (guaranteed BS-MD program)
-    MSc Computer Science (accelerated BS-MsC)
-    MSc in Pharmaceutical nanoengineering (co-admit to the MD program)
-    MSc Biomedical engineering (cross credits between biomedical sciences, electives, and transfering MD credits)
+    MD Medical Degree (guaranteed BS-MD program): 3 years (1st year counts towards undergrad)
+    MSc Computer Science (accelerated BS-MsC): 1 year
+    MSc in Biomedical engineering, focus in Pharmaceutical nanoengineering (co-admit to the MD program with MCAT scores, bring in half credits from MD program)
