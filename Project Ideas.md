@@ -42,7 +42,8 @@ Ordered from simple to most complex with language suggestions that I am fluent i
 
 	</details>
 		
-3. <a="https://medium.com/towards-artificial-intelligence/7-best-machine-learning-applications-that-you-must-know-71e1e9d97b53">Machine Learning Ideas</a>
+3. General
+	<a="https://medium.com/towards-artificial-intelligence/7-best-machine-learning-applications-that-you-must-know-71e1e9d97b53">Machine Learning Ideas</a>
 	1. Financial services
 		1. identifying fraud
 		1. spotting customer behavior
@@ -52,3 +53,5 @@ Ordered from simple to most complex with language suggestions that I am fluent i
 	1. Healthcare
 		1.  Sensors that are fixed in the wearable of the patient to give data concerning the patient’s condition, heartbeat, circulatory strain, and so on. The data that is accumulated through the sensors could help the specialists in dissecting the wellbeing and state of a person. Specialists can anticipate future medical problems that may stress over the patients. Furthermore, if, on the off chance that you are running a social insurance office, benefits counsel programming improvement organization in India, which may help you in different manners to keep up a great connection with your patients.
 		
+4. Business Utility
+	Create a software tool that can be used to track/create all forms of the software engineering lifestyle with pre-made and custom templates that guide the team through each engineering step, with easy-to-create diagrams, explanations of each of the steps, tips and techniques for further success, manual cost entry + rudimentary forecasting techniques based on changes. Allow the software management model chosen to change, etc.
