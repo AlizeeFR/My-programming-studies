@@ -1,5 +1,14 @@
-Udacity has either removed or is having internal errors because most of the below courses are now resulting in 404 errors. Contacted Udacity & Udacity Reddit section on 08/015/2019, waiting to hear back.
+Downloaded and archived with Git/Udacimak the below Udacity nanodegrees:
 
+Computer Vision
+C++
+Deep Reinforcement Learning
+FullStack Developer
+Intro to Machine Learning with PyTorch
+Data Engineer
+Sensor Fusion
+Natural Language Process
+Deep Learning
 
 <details>
   <summary>Data Analyst</summary>
