@@ -9,6 +9,9 @@ Data Engineer
 Sensor Fusion
 Natural Language Process
 Deep Learning
+Java Web Developer
+Intel® Edge AI for IoT Developers
+
 
 <details>
   <summary>Data Analyst</summary>
