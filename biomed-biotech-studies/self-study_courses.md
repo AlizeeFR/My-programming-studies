@@ -9,5 +9,6 @@ To be done while in college to prepare for medical school, MCAT & product develo
 
 
 
-Test preparation:
-1. [MCAT](https://www.khanacademy.org/test-prep/mcat)
+MCAT test preparation:
+1. [Khan Acdemy](https://www.khanacademy.org/test-prep/mcat)
+1. [Uworld](https://gradschool.uworld.com/mcat/)
