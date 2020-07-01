@@ -1,6 +1,6 @@
 # My-programming-studies
 
-***Disclaimer: this is just a plan of my future resumé. Now in college. Brought in several years worth of CS credits. Currently trying to figure out the way to handle the credit eval with my advisor This repository is being used to practice merges, commits, command-line connections and so on while organizing my academic studies.***
+***Disclaimer: this is just a plan of my future resumé. Freshman, fall 2020. This repository is being used to practice merges, commits, command-line connections and so on while organizing my academic studies.***
 
 Years studied to gain the below skills and construct projects: 5 to 8 years (bachelors + 7-year medical school + 1 year for any accelerated degrees (4+1), 40 to 60 hours a week of studying official college courses + the ones here. Use Focuster.com, SquareUp, and Gantt Project Management plans for students like Asana to track progess & collaboration)
 
@@ -34,11 +34,9 @@ Languages and applications for such languages (in order of proficiency)
  
  
  Eventual graduation:
-  Bachelor of Science
-     majors: computer science, biomedical sciences, (possibly music/operatic studies. Not sure if I want to do a minor or just continue private lessons there)
-  
+    Dual degree: Biomedical Sciences (BSc) and Computer Science (BS.CS)
   
   Graduate degrees:
-    MD Medical Degree (guaranteed BS-MD program): 3 years (1st year counts towards undergrad)
+    MD Medical Degree (guaranteed BS-MD program): 3 years (1st year counts towards undergrad final year)
     MSc Computer Science (accelerated BS-MsC): 1 year
     MSc in Biomedical engineering, focus in Pharmaceutical nanoengineering (co-admit to the MD program with MCAT scores, bring in half credits from MD program)
