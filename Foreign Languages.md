@@ -34,3 +34,9 @@ On-Demand Streaming
 
 
 </details>
+
+
+<details>
+  <summary>Arabic</summary>
+  
+1. [Modern Standard, Egyptian, Quran] https://gradschool.uworld.com/mcat/
