@@ -12,6 +12,9 @@ Current: HTML & CSS core
  1. [ ] A good companion book would be <a href="https://www.sitepoint.com/premium/books/build-your-own-website-the-right-way-using-html-css-3rd-edition">Build Your Own Website The Right Way Using HTML & CSS, 3rd Edition.</a>
 
  1. [ ] Then the course <a href="https://www.sitepoint.com/premium/courses/build-your-first-website-from-design-to-code-2878">Build Your First Website From Design to Code</a>
+ 
+ 1. [ ] JavaScript core <a href="https://app.pluralsight.com/paths/skill/javascript-core-language">
+
 </details>
 
 
@@ -57,6 +60,10 @@ Then it would probably be very beneficial if you learned a client side scripting
   * A good companion book would be <a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition">JavaScript: Novice to Ninja, 2nd Edition </a>
 
   * Another good book would be <a href="https://www.sitepoint.com/premium/books/simply-javascript">Simply JavaScript</a>
+
+  * Node.js <a href="https://app.pluralsight.com/paths/skill/node-js">
+ 
+  * React.js <a href="https://app.pluralsight.com/paths/skill/react">
 </details>
 
 <details>
