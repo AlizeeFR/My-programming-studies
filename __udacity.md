@@ -11,6 +11,9 @@ Natural Language Process
 Deep Learning
 Java Web Developer
 Intel® Edge AI for IoT Developers
+AI for Healthcare
+Cloud Developer
+AWS Cloud Architect
 
 
 <details>
