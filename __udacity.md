@@ -1,19 +1,19 @@
 Downloaded and archived with Git/Udacimak the below Udacity nanodegrees:
 
-Computer Vision
-C++
-Deep Reinforcement Learning
-FullStack Developer
-Intro to Machine Learning with PyTorch
-Data Engineer
-Sensor Fusion
-Natural Language Process
-Deep Learning
-Java Web Developer
-Intel® Edge AI for IoT Developers
-AI for Healthcare
-Cloud Developer
-AWS Cloud Architect
+- Computer Vision
+- C++
+- Deep Reinforcement Learning
+- FullStack Developer
+- Intro to Machine Learning with PyTorch
+- Data Engineer
+- Sensor Fusion
+- Natural Language Process
+- Deep Learning
+- Java Web Developer
+- Intel® Edge AI for IoT Developers
+- AI for Healthcare
+- Cloud Developer
+- AWS Cloud Architect
 
 
 <details>
