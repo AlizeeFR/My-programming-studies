@@ -12,4 +12,4 @@ To be done while in college to prepare for medical school, MCAT & product develo
 MCAT test preparation:
 1. [Khan Acdemy](https://www.khanacademy.org/test-prep/mcat)
 1. [Uworld](https://gradschool.uworld.com/mcat/)
-1. [Draw Anatomical Structures] https://www.myjewishlearning.com/article/yom-kippur-101/
+1. [Draw Anatomical Structures, Draw it to Know it](https://www.drawittoknowit.com/?fbclid=IwAR0vPbUCuhYrPZqwRVjfm2OeO1h-OFXoHMmM5ExWQxqkZGN2pUaMqP84IuU)
