@@ -49,6 +49,9 @@ On-Demand Streaming
   "There are some really great free books for all levels by kotar.co.il. What makes it so great is that they read their texts out loud (saves a lot of time for us who have no clue on how to pronounce) AND you can just mark a word and will receive some instant translation. They also have grammar sections and a summary vocabulary list at the end of the chapters. Normally, that is what you can get for free from them, but they also have some excercises you can do online right now, too (for as long as the lockdown commences). Here is the first book out of five: click.
 
   In order for the instant translation to work, you need to access it with a laptop or PC, mobile won't let you mark the words."
-
+  
+  https://ivritil.cet.ac.il/ <---- free books on hebrew. Bishvil ha-ivrit is quite good.
+  
+  https://hebrewverbs.cet.ac.il/ hebrew verb quizzer
 
 </details>
