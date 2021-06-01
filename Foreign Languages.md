@@ -40,6 +40,7 @@ On-Demand Streaming
   <summary>Arabic</summary>
   
 1. [Modern Standard, Egyptian, Quran] https://gradschool.uworld.com/mcat/
+1. [Arabic News Site] https://www.aljoumhouria.com/ar/news/597923/%D9%85%D8%A7-%D8%AC%D8%AF%D9%8A%D8%AF-%D8%B5%D8%AD%D8%A9-%D9%86%D8%B5%D8%B1%D8%A7%D9%84%D9%84%D9%87
 </details>
 
 <details>
