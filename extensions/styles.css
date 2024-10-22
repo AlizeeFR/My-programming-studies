@@ -1,0 +1,8 @@
+.hidden {
+    display: none;
+  }
+  
+.active-tab {
+display: block;
+}
+  

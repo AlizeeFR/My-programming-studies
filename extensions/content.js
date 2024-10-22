@@ -3,11 +3,15 @@ let micIcon;
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   const { action, pauseTime, unpauseTime, autoUnpause } = message;
+  chrome.storage.sync.set({ pauseTime, unpauseTime, autoUnpause }, () => {
+    console.log('Pause time, unpause time, and autoUnpause settings saved.');
+  });
 
   if (action === 'stop') {
     stopTimers();
     console.log("Extension stopped");
   } else if (action === 'start' || action === 'restart') {
+    alert("Calleod!");
     stopTimers();
     if (pauseTime > 0) {
         console.log("Extension started");
@@ -42,5 +46,5 @@ function startPauseUnpauseCycle(pauseTime, unpauseTime, autoUnpause) {
 function stopTimers() {
   clearTimeout(timeoutPause);
   clearTimeout(timeoutUnpause);
-  console.log('Timers cleared and extension stopped.');
+  console.log('Timers cleared.');
 }
