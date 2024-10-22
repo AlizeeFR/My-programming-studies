@@ -53,7 +53,7 @@ function startExtensionOnActiveTab() {
   // Query the currently active tab
   chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
     if (tabs[0] && tabs[0].url.includes('youtube.com')) {
-      const activeTabId = tabs[0].id;
+      activeTabId = tabs[0].id;
       sendMessageToContentScript('start');
     } else {
       console.error('Not a YouTube tab.');
@@ -67,7 +67,6 @@ function sendMessageToContentScript(action) {
   const pauseTime = document.getElementById('pauseTime').value;
   const unpauseTime = document.getElementById('unpauseTime').value;
   const autoUnpause = document.getElementById('autoUnpauseToggle').checked;
-
   if (activeTabId !== null) {
     // Send a message to the content script running on the active tab
     chrome.tabs.sendMessage(activeTabId, {
