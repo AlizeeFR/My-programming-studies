@@ -4,11 +4,9 @@ chrome.runtime.onMessage.addListener(
     (message, sender, sendResponse) => {
         const { action, pauseTime, unpauseTime, autoUnpause } = message;
         if (action === 'stop') {
-            alert("Calling!");
             stopTimers();
             console.log("Extension stopped");
         } else if (action === 'start' || action === 'restart') {
-            alert("Called!");
             stopTimers();
             if (pauseTime > 0) {
                 console.log("Extension started");
