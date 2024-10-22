@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YouTube Auto Pause Extension</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 250px;
+      padding: 10px;
+    }
+    button {
+      margin: 5px 0;
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+    }
+    .hidden {
+      display: none;
+    }
+    #tabs {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .tab {
+      cursor: pointer;
+      padding: 5px;
+      background-color: #f1f1f1;
+      border-radius: 3px;
+    }
+    .active-tab {
+      background-color: #ddd;
+    }
+    #savedNotesTab {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="tabs">
+    <div id="controlsTab" class="tab active-tab">Controls</div>
+    <div id="savedNotesTabButton" class="tab">Saved Notes</div>
+  </div>
+
+  <!-- Controls Tab -->
+  <div id="controlsTabContent">
+    <label for="pauseTime">Pause after (seconds):</label>
+    <input type="number" id="pauseTime" min="1" placeholder="e.g. 10" />
+
+    <label for="unpauseTime">Unpause after (seconds, optional):</label>
+    <input type="number" id="unpauseTime" min="1" placeholder="e.g. 5" />
+
+    <label>
+      <input type="checkbox" id="autoUnpauseToggle" />
+      Automatically unpause
+    </label>
+
+    <button id="startButton">Start</button>
+    <button id="stopButton">Stop</button>
+
+    <!-- Audio Note Controls -->
+    <button id="addAudioNoteButton">Add audio note</button>
+    <button id="saveAudioNoteButton">Save audio note</button>
+  </div>
+
+  <!-- Saved Notes Tab -->
+  <div id="savedNotesTab" class="hidden">
+    <h3>Saved Audio Notes</h3>
+    <div id="audioNotesList" style="max-height: 400px; overflow-y: auto;"></div> <!-- Ensure the list has enough space -->
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
