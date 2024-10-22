@@ -51,41 +51,42 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 function startExtensionOnActiveTab() {
   // Query the currently active tab
-  chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
-    if (tabs[0] && tabs[0].url.includes('youtube.com')) {
-      activeTabId = tabs[0].id;
-      sendMessageToContentScript('start');
-    } else {
-      console.error('Not a YouTube tab.');
-    }
-  });
-  
+      sendMessageToContentScript('start'); 
 }
 
 
 function sendMessageToContentScript(action) {
+
   const pauseTime = document.getElementById('pauseTime').value;
   const unpauseTime = document.getElementById('unpauseTime').value;
   const autoUnpause = document.getElementById('autoUnpauseToggle').checked;
-  if (activeTabId !== null) {
-    // Send a message to the content script running on the active tab
-    chrome.tabs.sendMessage(activeTabId, {
-      action,
-      pauseTime,
-      unpauseTime,
-      autoUnpause
-    }, (response) => {
-      if (chrome.runtime.lastError) {
-        console.error("Error: ", chrome.runtime.lastError.message);
-        alert('Content script is not responding.');
-      } else {
-        console.log("Message sent successfully to the content script.");
-      }
-    });
-    
-  } else {
-    console.error("No active tab ID found.");
-  }
+  
+  chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+    const activeTabId = tabs[0].id;
+  
+    // Check if we're on YouTube before trying to inject the content script
+    if (tabs[0].url.includes('youtube.com')) {
+      chrome.scripting.executeScript({
+        target: { tabId: activeTabId },
+        files: ['content.js']
+      }, () => {
+        chrome.tabs.sendMessage(activeTabId, {
+          action,
+          pauseTime,
+          unpauseTime,
+          autoUnpause
+        }, (response) => {
+          if (chrome.runtime.lastError) {
+            console.error("Error sending message to content script: ", chrome.runtime.lastError.message);
+          } else {
+            console.log("Message sent successfully to content script:", response);
+          }
+        });
+      });
+    } else {
+      console.error('This is not a YouTube tab.');
+    }
+  });  
 }
 
 function updateAndRestart() {

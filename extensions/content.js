@@ -1,14 +1,14 @@
-let timeoutPause, timeoutUnpause;
-let micIcon;
+var timeoutPause, timeoutUnpause;
 
 chrome.runtime.onMessage.addListener(
     (message, sender, sendResponse) => {
         const { action, pauseTime, unpauseTime, autoUnpause } = message;
         if (action === 'stop') {
+            alert("Calling!");
             stopTimers();
             console.log("Extension stopped");
         } else if (action === 'start' || action === 'restart') {
-            alert("Calleod!");
+            alert("Called!");
             stopTimers();
             if (pauseTime > 0) {
                 console.log("Extension started");
