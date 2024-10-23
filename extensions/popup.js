@@ -4,8 +4,34 @@ let mediaRecorder;
 let audioChunks = [];
 let savedAudioNotes = [];
 
-document.addEventListener('DOMContentLoaded', () => {
-  chrome.storage.sync.get(['pauseTime', 'unpauseTime', 'autoUnpause', 'activeTabId', 'savedAudioNotes'], (data) => {
+document.addEventListener('DOMContentLoaded', async() => {
+  const response = await chrome.runtime.sendMessage({ action: 'get-status' });
+  const state = response.recordingState;
+    
+    if (state === 'recording') {
+      isRecording = true;
+      document.getElementById('addAudioNoteButton').innerText = 'Pause audio note';
+      document.getElementById('saveAudioNoteButton').classList.remove('hidden');
+    } else if (state === 'paused') {
+      isRecording = false;
+      document.getElementById('addAudioNoteButton').innerText = 'Resume audio note';
+      document.getElementById('saveAudioNoteButton').classList.remove('hidden');
+    } else {
+      // If stopped, show default state
+      isRecording = false;
+      document.getElementById('addAudioNoteButton').innerText = 'Add audio note';
+      document.getElementById('saveAudioNoteButton').classList.add('hidden');
+    }
+  });
+
+    // Event for starting and stopping audio recording
+    document.getElementById('addAudioNoteButton').addEventListener('click', toggleAudioRecording);
+    // Event to save the audio note
+    document.getElementById('saveAudioNoteButton').addEventListener('click', stopAudioRecording);
+    //Event to delete notes from storage
+    document.getElementById('clearAudioNotesButton').addEventListener('click', clearAllAudioNotes);
+
+  chrome.storage.sync.get(['pauseTime', 'unpauseTime', 'autoUnpause', 'activeTabId'], (data) => {
     document.getElementById('pauseTime').value = (data.pauseTime !== undefined ? data.pauseTime : 10);  // Default to 10 seconds
     document.getElementById('unpauseTime').value = (data.unpauseTime !== undefined ? data.unpauseTime : 5);  // Default to 5 seconds
     document.getElementById('autoUnpauseToggle').checked = (data.autoUnpause !== undefined ? data.autoUnpause : false);  // Default to false
@@ -14,48 +40,43 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  chrome.storage.local.get(['savedAudioNotes'], (data) => {
+  chrome.storage.local.get(['isRecording', 'savedAudioNotes'], (data) => {
+    isRecording = data.isRecording || false;
+    if (isRecording) {
+      document.getElementById('addAudioNoteButton').innerText = 'Pause audio note';
+      document.getElementById('saveAudioNoteButton').classList.remove('hidden');
+    } else {
+      document.getElementById('addAudioNoteButton').innerText = 'Add audio note';
+      document.getElementById('saveAudioNoteButton').classList.add('hidden');
+    }
+
     if (data.savedAudioNotes) {
-      savedAudioNotes = data.savedAudioNotes;  // Load saved audio notes
-      updateAudioNotesList();  // Update the UI to display the saved notes
+      savedAudioNotes = data.savedAudioNotes;  // Load saved audio notes into data
+      reloadUI();
     } else {
       console.log('No saved audio notes found.');
     }
   });
 
-  
+    //update variables and restart timers upon user input change
     document.getElementById('pauseTime').addEventListener('input', updateAndRestart);
     document.getElementById('unpauseTime').addEventListener('input', updateAndRestart);
     document.getElementById('autoUnpauseToggle').addEventListener('change', updateAndRestart);
-  
+
+    //Start the extension via button
     document.getElementById('startButton').addEventListener('click', () => {
       startExtensionOnActiveTab();
     });
+
+    //Stop extension via button
     document.getElementById('stopButton').addEventListener('click', () => {
       sendMessageToContentScript('stop');
     });
-
-    // Event for starting and stopping audio recording
-    document.getElementById('addAudioNoteButton').addEventListener('click', toggleAudioRecording);
-    // Event to save the audio note
-    document.getElementById('saveAudioNoteButton').addEventListener('click', saveAudioNote);
-    document.getElementById('clearAudioNotesButton').addEventListener('click', clearAllAudioNotes);
-
-
-    // Switch between tabs
+    // Event to switch between tabs upon button click in popup
     document.getElementById('controlsTab').addEventListener('click', showControlsTab);
     document.getElementById('savedNotesTabButton').addEventListener('click', showSavedNotesTab);
 
-    document.addEventListener('DOMContentLoaded', () => {
-      chrome.storage.local.get(['savedAudioNotes'], (data) => {
-        if (data.savedAudioNotes) {
-          savedAudioNotes = data.savedAudioNotes;
-          updateAudioNotesList();
-        }
-      });
-    });
-});
-function startExtensionOnActiveTab() {
+    function startExtensionOnActiveTab() {
   // Query the currently active tab
       sendMessageToContentScript('start'); 
 }
@@ -71,7 +92,7 @@ function sendMessageToContentScript(action) {
     const activeTabId = tabs[0].id;
   
     // Check if we're on YouTube before trying to inject the content script
-    if (tabs[0].url.includes('youtube.com')) {
+    if (tabs[0].url) {
       chrome.scripting.executeScript({
         target: { tabId: activeTabId },
         files: ['content.js']
@@ -90,12 +111,13 @@ function sendMessageToContentScript(action) {
         });
       });
     } else {
-      console.error('This is not a YouTube tab.');
+      console.error('Problem with tabs[0].url.');
     }
   });  
 }
 
 function updateAndRestart() {
+  //fetch current user-entered values to create timers
   const pauseTime = document.getElementById('pauseTime').value;
   const unpauseTime = document.getElementById('unpauseTime').value;
   const autoUnpause = document.getElementById('autoUnpauseToggle').checked;
@@ -110,17 +132,35 @@ function updateAndRestart() {
     sendMessageToContentScript('restart');  // Restart after 2-second delay
   }, 2000);
 }
+
+
 // Start recording audio
-function toggleAudioRecording() {
-  console.log('Audio recording toggled'); // Debug log
-  if (!isRecording) {
-    startAudioRecording();
+async function toggleAudioRecording() {
+  if(!isRecording){
+    const response = await sendMessageAsync({ action: 'start-recording'});
+      if (response.status === 'Recording started') {
+        alert("This is your thingy!", response.status);
+        isRecording = true;
+        chrome.storage.local.set({ isRecording }); // Save state to local storage
+        document.getElementById('addAudioNoteButton').innerText = 'Pause audio note';
+        document.getElementById('saveAudioNoteButton').classList.remove('hidden');
+      }  
   } else {
-    pauseAudioRecording();
+    const response = await sendMessageAsync({ action: isRecording ? 'pause-recording' : 'resume-recording' });
+      if (response.status === 'Recording paused') {
+        isRecording = false;
+        chrome.storage.local.set({ isRecording }); // Save state to local storage
+        document.getElementById('addAudioNoteButton').innerText = 'Resume audio note';
+      } else if (response.status === 'Recording resumed') {
+        isRecording = true;
+        chrome.storage.local.set({ isRecording }); // Save state to local storage
+
+        document.getElementById('addAudioNoteButton').innerText = 'Pause audio note';
+      }
   }
 }
 
-// Start recording the audio
+/* Start recording the audio
 function startAudioRecording() {
   navigator.mediaDevices.getUserMedia({ audio: true })
     .then(stream => {
@@ -155,37 +195,29 @@ function pauseAudioRecording() {
     document.getElementById('addAudioNoteButton').innerText = 'Pause audio note';
   }
 }
+*/
 
-// Function to convert a Blob to a base64-encoded string
-function blobToBase64(blob) {
-  return new Promise((resolve, reject) => {
-    const reader = new FileReader();
+async function stopAudioRecording() {
+  const response = await sendMessageAsync({ action: 'stop-recording'});
+    if (response.status === 'Recording stopped') {
+      console.log('Recording stopped');
+      isRecording = false;
+      chrome.storage.local.set({ isRecording }); // Update state to reflect stopped recording
 
-    // Check if the Blob is valid
-    if (!blob || blob.size === 0) {
-      return reject(new Error("Blob is empty or invalid."));
+      document.getElementById('addAudioNoteButton').innerText = 'Add audio note';
+      document.getElementById('saveAudioNoteButton').classList.add('hidden');
     }
-
-    reader.onloadend = () => {
-      resolve(reader.result);  // Resolve the base64-encoded data URL
-    };
-
-    reader.onerror = (err) => {
-      reject(new Error("Failed to convert Blob to base64."));
-    };
-
-    try {
-      reader.readAsDataURL(blob);  // Attempt to read the Blob as a base64 data URL
-
-    } catch (error) {
-      reject(new Error("FileReader failed to read the Blob."));
-    }
-  });
-
 }
 
-// Function to save the recorded audio note
-// Function to save the recorded audio note
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  if (message.action === 'audioSaved') {
+    // Audio has been saved, so reload the UI to display the new audio
+    reloadUI();
+  }
+});
+
+
+/* Function to save the recorded audio note
 async function saveAudioNote() {
   // Ensure mediaRecorder is in a valid state to stop recording
   if (mediaRecorder && (mediaRecorder.state === "recording" || mediaRecorder.state === "paused")) {
@@ -205,26 +237,33 @@ async function saveAudioNote() {
     const blob = new Blob(audioChunks, { type: 'audio/webm' });
     
     try {
-      // Convert the Blob to base64
+      // Convert the Blob to base64 so it can be saved into a filename string
       const base64Blob = await blobToBase64(blob);
+      // Get the current tab's URL
+      chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+        const tabUrl = tabs[0].url;  // Get the URL of the active tab
+        // Now you can save both the base64Blob and the tab URL to storage
+        const fileName = `audio_note_${new Date().toISOString()}.webm`;
+        userInputContext = "";
 
-      // Now you can save the base64Blob (which contains the base64 string) to storage
-      const fileName = `audio_note_${new Date().toISOString()}.webm`;
-
-      // Create the audio element metadata to save
-      const audioElement = {
-        fileName,
-        base64Blob  // This is the base64 string that will be stored
-      };
-
-      // Push the audio note to the savedAudioNotes array
-      savedAudioNotes.push(audioElement);
-
-      // Store the updated audio notes in Chrome storage (local)
-      chrome.storage.local.set({ savedAudioNotes }, () => {
-        // Update the UI with the new audio note
-        updateAudioNotesList();
+        // Create the audio element metadata to save
+        const audioElement = {
+          fileName,
+          base64Blob,  // This is the base64 string that will be stored
+          tabUrl,       // Save the origin URL where the note was taken
+          userInputContext
+        };
+        savedAudioNotes.push(audioElement);
+        // Push the audio note to the savedAudioNotes array
+        // Store the updated audio notes in Chrome storage (local)
+        chrome.storage.local.set({ savedAudioNotes }, () => {
+          // Update the UI with the new audio note
+          reloadUI();
+        });
       });
+
+
+
 
       // Clear the audio chunks after saving
       audioChunks = [];
@@ -244,9 +283,30 @@ async function saveAudioNote() {
     }
   };
 }
+*/
+
+function reloadUI(){
+
+  audioNotesList = document.getElementById('audioNotesList');
+  savedAudioNotes.forEach(note => {
+    // Convert the base64 back to a Blob
+    const myblob = base64ToBlob(note.base64Blob);
+    const audioUrl = URL.createObjectURL(myblob);
+    const originURL = note.tabUrl;
+
+    const audioElementHTML = `
+    <div class="element" style="display: flex; align-items: center; font-family: Arial, sans-serif; font-size: 16px; margin-bottom: 10px;">
+    
+    <audio controls src="${audioUrl}" style="flex:4;"></audio>
+    <a href="${originURL}" target="_blank" rel="noopener noreferrer"><img src="findSource.png" style="flex:1; max-width: 20px; border-radius: 4px;"></a>
+
+    </div>`;
+
+    audioNotesList.innerHTML += audioElementHTML;
+  });
+}
 
 
-// Function to convert a base64-encoded string to a Blob
 // Function to convert a base64-encoded string to a Blob
 function base64ToBlob(base64, type = 'audio/webm') {
   if (!base64) {
@@ -278,47 +338,22 @@ function base64ToBlob(base64, type = 'audio/webm') {
   }
 }
 
+function dragAudio(event, blob, fileName) {
+  // Create a File object from the Blob
+  const wavFileName = fileName.replace(/\.\w+$/, '.wav');  // Replace the current extension with .wav
+  alert("Failure happens here!");
 
-// Function to update the list of saved audio notes
-function updateAudioNotesList() {
-  const audioNotesList = document.getElementById('audioNotesList');
+  // Create a File object from the Blob and set the MIME type to .wav
+  const file = new File([blob], wavFileName, { type: 'audio/wav' });
 
-  savedAudioNotes.forEach(note => {
-    // Convert the base64 back to a Blob
-    const blob = base64ToBlob(note.base64Blob);
-    
-    // Create a fresh audio URL for the Blob
-    const audioUrl = URL.createObjectURL(blob);
-    const downloadUrl = URL.createObjectURL(blob);
-    // Create the audio element with the regenerated URL
-    const audioElementHTML = `
-    <div class="element" style="display: flex; align-items: center; font-family: Arial, sans-serif; font-size: 16px; margin-bottom: 10px;">
-      <audio controls src="${audioUrl}" style="flex-grow: 1;"></audio>
-      <button class="three-dots-btn" aria-label="Download" style="flex-shrink: 5">⋮</button>
-    </div>`;
+  // Use the DataTransfer API to attach the file to the drag event
+  const dataTransfer = event.dataTransfer;
+  dataTransfer.effectAllowed = 'copy';  // Allow copy operation
+  dataTransfer.items.add(file);  // Attach the file
+  console.log('Dragging audio file as .wav:', wavFileName);
 
-
-    // Append the audio element to the list
-    audioNotesList.innerHTML += audioElementHTML;
-    const audioElement = audioNotesList.lastElementChild;
-    audioElement.addEventListener('dragstart', (event) => {
-      dragAudio(event, blob, note.fileName);
-    });
-
-    const dropdown = audioElement.querySelector('.dropdown');
-    const threeDotsBtn = dropdown.querySelector('.three-dots-btn');
-    const dropdownContent = dropdown.querySelector('.dropdown-content');
-
-    threeDotsBtn.addEventListener('click', () => {
-      const link = document.createElement('a');
-      link.href = downloadUrl;
-      link.download = note.fileName;  // Set the filename for the download
-      link.click();  // Programmatically click the link to trigger the download
-    });
-  });
-
-  console.log('Audio notes list updated.');
 }
+
 
 
 // Function to clear all saved audio notes
@@ -360,19 +395,14 @@ function showSavedNotesTab() {
   document.getElementById('savedNotesTabButton').classList.add('active-tab');
 }
 
-
-function dragAudio(event, blob, fileName) {
-  // Create a File object from the Blob
-  const wavFileName = fileName.replace(/\.\w+$/, '.wav');  // Replace the current extension with .wav
-
-  // Create a File object from the Blob and set the MIME type to .wav
-  const file = new File([blob], wavFileName, { type: 'audio/wav' });
-
-  // Use the DataTransfer API to attach the file to the drag event
-  const dataTransfer = event.dataTransfer;
-  dataTransfer.effectAllowed = 'copy';  // Allow copy operation
-  dataTransfer.items.add(file);  // Attach the file
-
-  console.log('Dragging audio file as .wav:', wavFileName);
-
+async function sendMessageAsync(message) {
+  return new Promise((resolve, reject) => {
+    chrome.runtime.sendMessage(message, (response) => {
+      if (chrome.runtime.lastError) {
+        reject(chrome.runtime.lastError);
+      } else {
+        resolve(response);
+      }
+    });
+  });
 }

@@ -1,21 +1,21 @@
 var timeoutPause, timeoutUnpause;
 
-chrome.runtime.onMessage.addListener(
-    (message, sender, sendResponse) => {
-        const { action, pauseTime, unpauseTime, autoUnpause } = message;
-        if (action === 'stop') {
-            stopTimers();
-            console.log("Extension stopped");
-        } else if (action === 'start' || action === 'restart') {
-            stopTimers();
-            if (pauseTime > 0) {
-                console.log("Extension started");
-            startPauseUnpauseCycle(pauseTime, unpauseTime, autoUnpause);
-            }
-        }
-        sendResponse({status: 'received'});
+
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  const { action, pauseTime, unpauseTime, autoUnpause } = message;
+  if (action === 'start') {
+    stopTimers();
+    if (pauseTime > 0) {
+      console.log("Extension started");
+      startPauseUnpauseCycle(pauseTime, unpauseTime, autoUnpause);
     }
-);
+    sendResponse({ status: 'received' });
+  } else if (action === 'stop') {
+    stopTimers();
+    console.log("Extension stopped");
+    sendResponse({ status: 'stopped' });
+  }
+});
 
 function startPauseUnpauseCycle(pauseTime, unpauseTime, autoUnpause) {
   const video = document.querySelector('video');
@@ -43,3 +43,4 @@ function stopTimers() {
   clearTimeout(timeoutUnpause);
   console.log('Timers cleared.');
 }
+

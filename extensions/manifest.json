@@ -5,7 +5,7 @@
     "description": "Automatically pause and unpause YouTube videos after a specified time.",
     "content_scripts": [
       {
-        "matches": ["*://*.youtube.com/*"],
+        "matches": ["<all_urls>"],
         "js": ["content.js"]
       }
     ],
@@ -15,9 +15,10 @@
         "16": "icon16.png"
       }
     },
-    "permissions": ["tabs", "activeTab", "scripting", "storage"],
+    "permissions": ["tabs", "activeTab", "scripting", "storage", "offscreen", "background"],
     "background": {
-      "service_worker": "background.js"
+      "service_worker": "background.js",
+      "type": "module"
     },
     "icons": {
       "16": "icon16.png"

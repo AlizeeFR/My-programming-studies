@@ -9,20 +9,7 @@
     flex-grow: 4; 
   }
 
-  .three-dots-btn {
-    background: none;
-    flex-shrink: 5;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    padding: 0;
-    margin-left: 8px;  
-    color: #333;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-  }
 
-  .three-dots-btn:hover {
-    color: #000;
+  .sourceIcon:hover {
+    background: rgba(0,0,0,0.5);
   }
