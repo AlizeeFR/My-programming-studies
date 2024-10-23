@@ -1,8 +1,28 @@
-.hidden {
-    display: none;
+
+  
+.element {
+    display: flex;
+    align-items: center;
   }
-  
-.active-tab {
-display: block;
-}
-  
+
+  audio {
+    flex-grow: 4; 
+  }
+
+  .three-dots-btn {
+    background: none;
+    flex-shrink: 5;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 8px;  
+    color: #333;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .three-dots-btn:hover {
+    color: #000;
+  }

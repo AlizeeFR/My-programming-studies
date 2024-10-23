@@ -289,16 +289,32 @@ function updateAudioNotesList() {
     
     // Create a fresh audio URL for the Blob
     const audioUrl = URL.createObjectURL(blob);
-    
+    const downloadUrl = URL.createObjectURL(blob);
     // Create the audio element with the regenerated URL
     const audioElementHTML = `
-      <div class="element" style="font-family: Arial, sans-serif; font-size: 16px; margin-bottom: 10px;" draggable="true" ondragstart="dragAudio(event, '${audioUrl}', '${note.fileName}')">
-        <p>Saved Audio Note:</p>
-        <audio controls src="${audioUrl}" style="width: 100%;"></audio>
-      </div>`;
+    <div class="element" style="display: flex; align-items: center; font-family: Arial, sans-serif; font-size: 16px; margin-bottom: 10px;">
+      <audio controls src="${audioUrl}" style="flex-grow: 1;"></audio>
+      <button class="three-dots-btn" aria-label="Download" style="flex-shrink: 5">⋮</button>
+    </div>`;
+
 
     // Append the audio element to the list
     audioNotesList.innerHTML += audioElementHTML;
+    const audioElement = audioNotesList.lastElementChild;
+    audioElement.addEventListener('dragstart', (event) => {
+      dragAudio(event, blob, note.fileName);
+    });
+
+    const dropdown = audioElement.querySelector('.dropdown');
+    const threeDotsBtn = dropdown.querySelector('.three-dots-btn');
+    const dropdownContent = dropdown.querySelector('.dropdown-content');
+
+    threeDotsBtn.addEventListener('click', () => {
+      const link = document.createElement('a');
+      link.href = downloadUrl;
+      link.download = note.fileName;  // Set the filename for the download
+      link.click();  // Programmatically click the link to trigger the download
+    });
   });
 
   console.log('Audio notes list updated.');
@@ -329,7 +345,7 @@ function clearAllAudioNotes() {
 // Show the controls tab
 function showControlsTab() {
   document.getElementById('controlsTabContent').classList.remove('hidden');
-  document.getElementById('controlsTabContent').style.display = 'block';
+  document.getElementById('savedNotesTab').style.display = 'none';
   document.getElementById('savedNotesTab').classList.add('hidden');
   document.getElementById('controlsTab').classList.add('active-tab');
   document.getElementById('savedNotesTabButton').classList.remove('active-tab');
@@ -345,3 +361,18 @@ function showSavedNotesTab() {
 }
 
 
+function dragAudio(event, blob, fileName) {
+  // Create a File object from the Blob
+  const wavFileName = fileName.replace(/\.\w+$/, '.wav');  // Replace the current extension with .wav
+
+  // Create a File object from the Blob and set the MIME type to .wav
+  const file = new File([blob], wavFileName, { type: 'audio/wav' });
+
+  // Use the DataTransfer API to attach the file to the drag event
+  const dataTransfer = event.dataTransfer;
+  dataTransfer.effectAllowed = 'copy';  // Allow copy operation
+  dataTransfer.items.add(file);  // Attach the file
+
+  console.log('Dragging audio file as .wav:', wavFileName);
+
+}
