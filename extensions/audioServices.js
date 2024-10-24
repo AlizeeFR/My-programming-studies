@@ -4,51 +4,151 @@ let mediaRecorder;
 let audioChunks = [];
 let savedAudioNotes = [];
 let recordingState = 'stopped';
+let statusMessage = '';
 
-chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-    if (message.target === 'offscreen') {
+const startRecording = async function(){
+  const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+  console.log("Check to see if the message port closure message came before or after this!");
 
-    if (message.action === 'start-recording') {
-        startAudioRecording();
-        recordingState = 'recording';
-        sendResponse({ status: 'Recording started', recordingState });
-      } else if (message.action === 'pause-recording') {
+  // Create MediaRecorder object after microphone access is granted
+  mediaRecorder = new MediaRecorder(stream);
+  mediaRecorder.ondataavailable = event => {
+    if (event.data && event.data.size > 0) {
+        audioChunks.push(event.data);
+    }
+  };
+
+// Start the MediaRecorder with a time slice of 1000 milliseconds (1 second)
+  mediaRecorder.start(1000);  // 1000ms means dataavailable event will be fired every second
+  // Update the recording state
+  isRecording = true;
+  recordingState = 'recording';
+  statusMessage = 'Recording started';
+  console.log('Recording started in background');
+}
+
+const startSaving = async function(){
+  const blob = new Blob(audioChunks, { type: 'audio/webm' });
+  audioChunks = [];
+
+  try {
+      // Convert the Blob to base64 so it can be saved into a filename string
+      const base64Blob = await blobToBase64(blob);
+      const fileName = `audio_note_${new Date().toISOString()}.webm`;
+      userInputContext = "";
+      // Create the audio element metadata to save
+
+      const audioElement = {
+          fileName,
+          base64Blob,  // This is the base64 string that will be stored
+          tabUrl:originTabUrl,       // Save the origin URL where the note was taken
+          userInputContext
+      };
+      // Push the audio note to the savedAudioNotes array
+      // Store the updated audio notes in Chrome storage (local)
+      await saveAudioNoteToStorage(audioElement);
+
+          // Stop the media stream from accessing the microphone                   
+      } catch (error) {
+  alert("Error converting Blob to base64:", error);
+  }
+
+}
+const saveAudioNoteToStorage = async (audioElement) => {
+  return new Promise((resolve, reject) => {
+    // Send a message to the background script to save audio notes
+    chrome.runtime.sendMessage({
+      action: 'save-audio-note',
+      audioElement
+    }, (response) => {
+      if (chrome.runtime.lastError) {
+        reject(chrome.runtime.lastError);
+      } else {
+        resolve(response);
+      }
+    });
+  });
+};
+
+const stopRecording = async function(){
+  if (mediaRecorder && (mediaRecorder.state === "recording" || mediaRecorder.state === "paused")) {
+    mediaRecorder.stop();  // Stop the recording completely
+    // Once the mediaRecorder stops, process the recorded audio
+      isRecording = false;
+      recordingState = 'stopped';
+      statusMessage = 'Recording stopped';
+      // Stop the media stream from accessing the microphone
+      if (mediaRecorder && mediaRecorder.stream) {
+        const tracks = mediaRecorder.stream.getTracks();
+        tracks.forEach(track => track.stop());
+        console.log("Successfully deleted all the tracks");
+      }
+      mediaRecorder = null;  // Clean up the media recorder
+      if (audioChunks.length > 0) {
+        console.log("Processing audio...");
+        await startSaving();  // Call the function to save the audio
+    } else {
+        console.error("No audio data captured.");
+    }
+
+    } else if (!mediaRecorder) {
+  console.error('MediaRecorder is not initialized.');
+} else {
+  console.error('MediaRecorder is not in a recording state.');
+}
+}
+
+const handleMessage = async (request, sender, sendResponse) => {
+  if (request.target === 'offscreen') {
+    if (request.action === 'start-recording') {
+      originTabUrl = request.tabUrl;
+      await startRecording();
+      sendResponse({status: statusMessage, recordingState});
+    } else if (request.action === 'pause-recording') {
         pauseAudioRecording();
         recordingState = 'paused';
-        sendResponse({ status: 'Recording paused', recordingState });
-      } else if (message.action === 'resume-recording') {
+        statusMessage = 'Recording paused';
+        sendResponse({status: statusMessage, recordingState});
+    } else if (request.action === 'resume-recording') {
         resumeAudioRecording();
         recordingState = 'recording';
-        sendResponse({ status: 'Recording resumed', recordingState });
-      } else if (message.action === 'stop-recording') {
-        stopAudioRecording();
-        recordingState = 'stopped';
-        sendResponse({ status: 'Recording stopped', recordingState });
-      }
+        statusMessage = 'Recording resumed';
+        sendResponse({status: statusMessage, recordingState});
+    } else if (request.action === 'stop-recording') {
+        await stopRecording();
+        sendResponse({status: statusMessage, recordingState});
+    } else if (request.action === 'get-status') {
+        statusMessage = `Current recording state: ${recordingState}`;
+        sendResponse({status: statusMessage, recordingState});
     }
-});
+  }
+}
 
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+    handleMessage(request, sender, sendResponse)
+
+    return true});
   
- function startAudioRecording() {
+function startAudioRecording() {
+  return new Promise((resolve, reject) => {
     if (isRecording) {
         console.log('Already recording');
+        resolve({ status: statusMessage, recordingState });  // Resolve early if already recording
         return;
-      }
-    
-    navigator.mediaDevices.getUserMedia({ audio: true })
-    .then(stream => {
-      mediaRecorder = new MediaRecorder(stream);
-      mediaRecorder.ondataavailable = event => audioChunks.push(event.data);
-      mediaRecorder.start();
-      isRecording = true;
-      recordingState = 'recording';  // Update state to recording
-      console.log('Recording started in background');
+    }
 
-    })
-    .catch(error => {
-      console.error('Error accessing microphone:', error);
-    });
-  }
+    navigator.mediaDevices.getUserMedia({ audio: true })
+        .then(
+          resolve()
+        )
+        .catch(error => {
+            console.error('Error accessing microphone:', error);
+            // Reject the promise on error
+            reject(error);
+        });
+});
+}
+
   
   function pauseAudioRecording() {
     if (mediaRecorder && mediaRecorder.state === "recording") {
@@ -65,64 +165,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
       console.log('Recording resumed');
     }
   }
-  
- function stopAudioRecording(mediaRecorder, sendResponse) {
-    if (mediaRecorder && (mediaRecorder.state === "recording" || mediaRecorder.state === "paused")) {
-        mediaRecorder.stop();  // Stop the recording completely
-        // Once the mediaRecorder stops, process the recorded audio
-            mediaRecorder.onstop = async () => {
 
-            // Create a blob from the audio chunks collected
-            const blob = new Blob(audioChunks, { type: 'audio/webm' });
-            audioChunks = [];
-
-            try {
-                // Convert the Blob to base64 so it can be saved into a filename string
-                const base64Blob = await blobToBase64(blob);
-                const fileName = `audio_note_${new Date().toISOString()}.webm`;
-                userInputContext = "";
-                // Create the audio element metadata to save
-
-                const audioElement = {
-                    fileName,
-                    base64Blob,  // This is the base64 string that will be stored
-                    tabUrl:originTabUrl,       // Save the origin URL where the note was taken
-                    userInputContext
-                };
-                // Push the audio note to the savedAudioNotes array
-                // Store the updated audio notes in Chrome storage (local)
-                chrome.storage.local.get(['savedAudioNotes'], (data) => {
-                    const savedAudioNotes = data.savedAudioNotes || [];
-                    savedAudioNotes.push(audioElement);
-
-                    // Store the updated audio notes in Chrome storage (local)
-                    chrome.storage.local.set({ savedAudioNotes }, () => {
-                    console.log('Audio note saved:', fileName);
-                    isRecording = false;
-  
-                    // Stop the media stream from accessing the microphone
-                    if (mediaRecorder && mediaRecorder.stream) {
-                        const tracks = mediaRecorder.stream.getTracks();
-                        tracks.forEach(track => track.stop());
-                    }
-                    mediaRecorder = null;  // Clean up the media recorder
-                    chrome.runtime.sendMessage({ action: 'audioSaved' });                    
-                    });
-                });
-
-
-            } catch (error) {
-            alert("Error converting Blob to base64:", error);
-            }
-        };
-    } else if (!mediaRecorder) {
-      console.error('MediaRecorder is not initialized.');
-      sendResponse({ status: 'Error', message: error.message });
-    } else {
-      console.error('MediaRecorder is not in a recording state.');
-      sendResponse({ status: 'Error! MediaRecorder is not in a recording state.' });  }
-    return true;
-  }
   
   // Function to convert a Blob to a base64-encoded string
 async  function blobToBase64(blob) {

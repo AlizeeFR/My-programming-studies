@@ -5,6 +5,7 @@ let audioChunks = [];
 let savedAudioNotes = [];
 
 document.addEventListener('DOMContentLoaded', async() => {
+
   const response = await chrome.runtime.sendMessage({ action: 'get-status' });
   const state = response.recordingState;
     
@@ -40,16 +41,7 @@ document.addEventListener('DOMContentLoaded', async() => {
     }
   });
 
-  chrome.storage.local.get(['isRecording', 'savedAudioNotes'], (data) => {
-    isRecording = data.isRecording || false;
-    if (isRecording) {
-      document.getElementById('addAudioNoteButton').innerText = 'Pause audio note';
-      document.getElementById('saveAudioNoteButton').classList.remove('hidden');
-    } else {
-      document.getElementById('addAudioNoteButton').innerText = 'Add audio note';
-      document.getElementById('saveAudioNoteButton').classList.add('hidden');
-    }
-
+  chrome.storage.local.get(['savedAudioNotes'], (data) => {
     if (data.savedAudioNotes) {
       savedAudioNotes = data.savedAudioNotes;  // Load saved audio notes into data
       reloadUI();
@@ -137,9 +129,12 @@ function updateAndRestart() {
 // Start recording audio
 async function toggleAudioRecording() {
   if(!isRecording){
-    const response = await sendMessageAsync({ action: 'start-recording'});
+    let activeTabUrl;
+    chrome.tabs.query({ active: true, currentWindow: true }, async (tabs) => {
+      activeTabUrl = tabs[0].url;  // Get the URL of the active tab
+    });
+    const response = await sendMessageAsync({ action: 'start-recording', tabUrl: activeTabUrl});
       if (response.status === 'Recording started') {
-        alert("This is your thingy!", response.status);
         isRecording = true;
         chrome.storage.local.set({ isRecording }); // Save state to local storage
         document.getElementById('addAudioNoteButton').innerText = 'Pause audio note';
@@ -154,7 +149,6 @@ async function toggleAudioRecording() {
       } else if (response.status === 'Recording resumed') {
         isRecording = true;
         chrome.storage.local.set({ isRecording }); // Save state to local storage
-
         document.getElementById('addAudioNoteButton').innerText = 'Pause audio note';
       }
   }

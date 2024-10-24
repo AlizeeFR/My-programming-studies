@@ -29,35 +29,48 @@ console.log("Background script running...");
     }
   }
 
-  async function forwardToOffscreenDocument(message) {
+  async function forwardToOffscreenDocument(message, sendResponse) {
     await ensureOffscreenDocument(); // Make sure the offscreen document is created
   
     // Add a target identifier to indicate that the message is intended for the offscreen document
     message.target = 'offscreen';
   
     // Forward the message to the offscreen document
-    const response = await chrome.runtime.sendMessage(message)
-    if (response.recordingState === 'recording') {
-      isRecording = true;
-    }
-    sendResponse(response); // Relay response back to the original sender
+    console.log("I'm sending this message:", message);
+    const response = await chrome.runtime.sendMessage(message, (response)=>{
+      if (chrome.runtime.lastError) {
+        console.error('Error sending message:', chrome.runtime.lastError.message);
+      } else {
+          console.log('Response from audioServices:', response);
+          sendResponse(response); // Relay response back to the original sender
+      }
+      return true;
+    });
     return true;
   }
   
   chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-    if (['get-status', 'start-recording', 'pause-recording', 'resume-recording', 'stop-recording'].includes(message.action)) {
-      forwardToOffscreenDocument(message, sendResponse)
-        .then(response => {
-          // Forward the response from forwardToOffscreenDocument
-          sendResponse(response);
-        })
-        .catch(error => {
-          console.error('Error forwarding message:', error);
-          sendResponse({ error: error.message });
-        });
+
+    if (message.action === 'save-audio-note') {
+      // Retrieve saved audio notes and add the new one
+      chrome.storage.local.get(['savedAudioNotes'], (data) => {
+        const savedAudioNotes = data.savedAudioNotes || [];
+        savedAudioNotes.push(message.audioElement);
   
+        // Save the updated audio notes back to local storage
+        chrome.storage.local.set({ savedAudioNotes }, () => {
+          console.log('Audio note saved to storage.');
+          sendResponse({ success: true });
+        });
+      });
+      return true;  // Keeps the message port open for async response
+    }
+  
+    if (['get-status', 'start-recording', 'pause-recording', 'resume-recording', 'stop-recording'].includes(message.action)) {
+      forwardToOffscreenDocument(message, sendResponse);
       return true; // Indicates sendResponse will be called asynchronously
     }
+    return true;
   });
   
   
