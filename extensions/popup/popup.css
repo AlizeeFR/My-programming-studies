@@ -1,0 +1,141 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number]{
+  -moz-appearance: textfield;
+  margin-left: auto;
+  text-align: center;
+}
+
+#tabs > img {
+  padding-top: -10px;
+  padding-bottom: -10px;
+  cursor: pointer;
+
+}
+body {
+  font-family: Arial, sans-serif;
+  width: 250px;
+  padding: 10px;
+}
+
+.row {
+  display: flex;
+  max-height: 100px;
+  justify-content: space-between;
+  align-items: center;;
+}
+
+.col  {
+  display: flex;
+  max-width: 50%;
+  max-height: 50px;
+}
+
+.col > label {
+  max-width: fit-content;
+}
+
+#unpauseTime {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 5px auto;
+}
+
+.button-with-icon {
+  position: relative;
+}
+.button-icon {
+  position: absolute;
+  top:10px;
+  left: 20px;
+  border:1px solid black;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+
+button:not(#autoUnpauseToggle) {
+  margin: 5px 0;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 15px;
+}
+
+#autoUnpauseToggle {
+  padding: 5px 15px;
+  margin: 0;
+
+}
+
+.hidden {
+  display: none;
+}
+
+#tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#tabs > * {
+  max-width: min-content;
+  min-width: 50px;
+}
+.tab {
+  cursor: pointer;
+  padding: 5px;
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+}
+.active-tab {
+  background-color: #ddd;
+}
+#savedNotesTab {
+  width: 100%;
+  display: none;
+}
+
+  
+.element {
+  display: flex;
+  align-items: center;
+}
+
+#URLMatch {
+  max-height: 400px; 
+  overflow-y: auto;
+  position: relative;
+  width: 100%;
+}
+
+audio {
+  flex-grow: 4; 
+}
+
+.sourceIcon:hover {
+  background: rgba(0,0,0,0.5);
+}
+
+#audioNotesList {
+  width: 100%;
+  position: relative;
+}
+
+.divider {
+  width: 90%;
+  border: 1px solid black;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+#clearAudioNotesButton {
+  margin-top: 10px;
+}
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>YouTube Auto Pause Extension</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div id="tabs">
+      <div id="controlsTab" class="tab active-tab">Controls</div>
+      <img
+        src="/images/icons8-flash-on-50.png"
+        id="startButton"
+        alt="start button"
+      />
+      <img
+        src="/images/icons8-flash-off-50.png"
+        id="stopButton"
+        alt="stop button"
+      />
+      <div id="savedNotesTabButton" class="tab">Saved Notes</div>
+    </div>
+
+    <!-- Controls Tab -->
+    <div id="controlsTabContent">
+      <div class="row">
+        <div class="col">
+          <label for="pauseTime">Pause after (seconds):</label>
+          <input
+            type="number"
+            id="pauseTime"
+            min="1"
+            max="60"
+            placeholder="e.g. 10"
+          />
+        </div>
+          <input type="checkbox" id="autoUnpauseToggle"><label for="autoUnpauseToggle">Auto Unpause</label></input>
+      </div>
+      <div class="row">
+      <label for="unpauseTime">Unpause after (seconds):</label>
+      <input
+        type="number"
+        id="unpauseTime"
+        min="1"
+        max="60"
+        placeholder="e.g. 5"
+      />
+    </div>
+    </div>
+    <!-- Audio Note Controls -->
+    <div class="button-with-icon">
+      <button id="addAudioNoteButton">Add audio note</button>
+      <img class="button-icon" src="/images/mic-start.png" alt="mic image" />
+    </div>
+    <button id="saveAudioNoteButton">Save audio note</button>
+
+    <!-- Saved Notes Tab -->
+    <div id="savedNotesTab">
+      <h3>Saved Audio Notes</h3>
+      <!-- Clear button -->
+      <div id="audioNotesList">
+        <div id="URLMatch"></div>
+        <div class="divider"></div>
+        <div id="nonMatch"></div>
+      </div>
+      <!-- Ensure the list has enough space -->
+      <button id="clearAudioNotesButton">Clear All Notes</button>
+    </div>
+
+    <script src="/popup/popup.js"></script>
+
+  </body>
+</html>
